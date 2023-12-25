@@ -12,11 +12,13 @@
 // SCREEN: ui_Screen1
 void ui_Screen1_screen_init(void);
 lv_obj_t *ui_Screen1;
+lv_obj_t *ui_Label1;
+lv_obj_t *ui_Button1;
 lv_obj_t *ui____initial_actions0;
 
 ///////////////////// TEST LVGL SETTINGS ////////////////////
-#if LV_COLOR_DEPTH != 32
-    #error "LV_COLOR_DEPTH should be 32bit to match SquareLine Studio's settings"
+#if LV_COLOR_DEPTH != 16
+    #error "LV_COLOR_DEPTH should be 16bit to match SquareLine Studio's settings"
 #endif
 #if LV_COLOR_16_SWAP !=0
     #error "LV_COLOR_16_SWAP should be 0 to match SquareLine Studio's settings"

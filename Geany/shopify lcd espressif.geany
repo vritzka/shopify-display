@@ -26,10 +26,13 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=0
-FILE_NAME_0=6022;C;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2Fmain.c;0;4
-FILE_NAME_1=416;C++;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2Fmain.h;0;4
-FILE_NAME_2=242;CMake;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2FCMakeLists.txt;0;4
+current_page=4
+FILE_NAME_0=167;C;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2Fmain.c;0;4
+FILE_NAME_1=424;C++;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2Fmain.h;0;4
+FILE_NAME_2=116;CMake;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2FCMakeLists.txt;0;4
+FILE_NAME_3=2502;C;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2Flvgl_demo_ui.c;0;4
+FILE_NAME_4=9163;C;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2Fgui.c;0;4
+FILE_NAME_5=560;C++;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2Fgui.h;0;4
 
 [VTE]
 last_dir=/Users/volkerritzka
