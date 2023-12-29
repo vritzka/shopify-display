@@ -1,0 +1,126 @@
+[1/20] Performing build step for 'bootloader'
+[1/1] cd /Users/volkerritzka/esp/shopify-disp/build/bootloader/esp-idf/esptool_py && /Users/volkerritzka/.espressif/python_env/idf5.1_py3.11_env/bin/python /Users/volkerritzka/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/volkerritzka/esp/shopify-disp/build/bootloader/bootloader.bin
+Bootloader binary size 0x51c0 bytes. 0x2e40 bytes (36%) free.
+[2/20] No install step for 'bootloader'
+[3/20] Completed 'bootloader'
+[4/20] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/components/ui_comp_hook.c.obj
+[5/20] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/screens/ui_Screen1.c.obj
+[6/20] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/screens/ui_Screen3.c.obj
+[7/20] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/screens/ui_Screen2.c.obj
+[8/20] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/ui.c.obj
+/Users/volkerritzka/esp/shopify-disp/main/ui/ui.c: In function 'ui_event_Screen1':
+/Users/volkerritzka/esp/shopify-disp/main/ui/ui.c:62:66: warning: unused variable 'target' [-Wunused-variable]
+   62 |     lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
+      |                                                                  ^~~~~~
+/Users/volkerritzka/esp/shopify-disp/main/ui/ui.c: In function 'ui_event_Screen2':
+/Users/volkerritzka/esp/shopify-disp/main/ui/ui.c:69:66: warning: unused variable 'target' [-Wunused-variable]
+   69 |     lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
+      |                                                                  ^~~~~~
+/Users/volkerritzka/esp/shopify-disp/main/ui/ui.c: In function 'ui_event_WifiKeyboard':
+/Users/volkerritzka/esp/shopify-disp/main/ui/ui.c:76:66: warning: unused variable 'target' [-Wunused-variable]
+   76 |     lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
+      |                                                                  ^~~~~~
+/Users/volkerritzka/esp/shopify-disp/main/ui/ui.c: In function 'ui_event_WifiScanButton':
+/Users/volkerritzka/esp/shopify-disp/main/ui/ui.c:82:66: warning: unused variable 'target' [-Wunused-variable]
+   82 |     lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
+      |                                                                  ^~~~~~
+/Users/volkerritzka/esp/shopify-disp/main/ui/ui.c: In function 'ui_event_Button1':
+/Users/volkerritzka/esp/shopify-disp/main/ui/ui.c:88:66: warning: unused variable 'target' [-Wunused-variable]
+   88 |     lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
+      |                                                                  ^~~~~~
+/Users/volkerritzka/esp/shopify-disp/main/ui/ui.c: In function 'ui_event____initial_actions0':
+/Users/volkerritzka/esp/shopify-disp/main/ui/ui.c:94:66: warning: unused variable 'target' [-Wunused-variable]
+   94 |     lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
+      |                                                                  ^~~~~~
+[9/20] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/ui_helpers.c.obj
+[10/20] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/gui.c.obj
+[11/20] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+/Users/volkerritzka/esp/shopify-disp/main/main.c:10:20: warning: 'TAG' defined but not used [-Wunused-variable]
+   10 | static const char *TAG = "main.h";
+      |                    ^~~
+[12/20] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/ui_events.c.obj
+[13/20] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/api_request_task.c.obj
+[14/20] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/general.c.obj
+[15/20] Linking C static library esp-idf/main/libmain.a
+[16/20] Generating ld/sections.ld
+[17/20] Linking CXX executable shopify_display.elf
+[18/20] Generating binary image from built executable
+esptool.py v4.7.dev3
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /Users/volkerritzka/esp/shopify-disp/build/shopify_display.bin
+[19/20] cd /Users/volkerritzka/esp/shopify-disp/build/esp-idf/esptool_py && /Users/volkerritzka/.espressif/python_env/idf5.1_py3.11_env/bin/python /Users/volkerritzka/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/volkerritzka/esp/shopify-disp/build/partition_table/partition-table.bin /Users/volkerritzka/esp/shopify-disp/build/shopify_display.bin
+shopify_display.bin binary size 0xf6fa0 bytes. Smallest app partition is 0x177000 bytes. 0x80060 bytes (34%) free.
+[19/20] cd /Users/volkerritzka/esp/esp-idf/components/esptool_py && /usr/local/Cellar/cmake/3.27.7/bin/cmake -D IDF_PATH=/Users/volkerritzka/esp/esp-idf -D "SERIAL_TOOL=/Users/volkerritzka/.espressif/python_env/idf5.1_py3.11_env/bin/python;;/Users/volkerritzka/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/volkerritzka/esp/shopify-disp/build -P /Users/volkerritzka/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/cu.usbserial-1410 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x0 bootloader/bootloader.bin 0x10000 shopify_display.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.dev3
+Serial port /dev/cu.usbserial-1410
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.1)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: f4:12:fa:ce:63:a0
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x00106fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 20928 bytes to 13297...
+Writing at 0x00000000... (100 %)
+Wrote 20928 bytes (13297 compressed) at 0x00000000 in 0.7 seconds (effective 223.4 kbit/s)...
+Hash of data verified.
+Compressed 1011616 bytes to 649719...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001a322... (5 %)
+Writing at 0x000248ac... (7 %)
+Writing at 0x0002d2c5... (10 %)
+Writing at 0x00032365... (12 %)
+Writing at 0x0003daed... (15 %)
+Writing at 0x000438f4... (17 %)
+Writing at 0x00049c16... (20 %)
+Writing at 0x0004f6b8... (22 %)
+Writing at 0x00055482... (25 %)
+Writing at 0x0005b396... (27 %)
+Writing at 0x00060c30... (30 %)
+Writing at 0x000665d6... (32 %)
+Writing at 0x0006bff6... (35 %)
+Writing at 0x00071cfc... (37 %)
+Writing at 0x00077cd7... (40 %)
+Writing at 0x0007e558... (42 %)
+Writing at 0x0008433d... (45 %)
+Writing at 0x00089ec0... (47 %)
+Writing at 0x0008f421... (50 %)
+Writing at 0x00094354... (52 %)
+Writing at 0x000993fb... (55 %)
+Writing at 0x0009e46d... (57 %)
+Writing at 0x000a371b... (60 %)
+Writing at 0x000a8b40... (62 %)
+Writing at 0x000ae6e0... (65 %)
+Writing at 0x000b3c4c... (67 %)
+Writing at 0x000b9556... (70 %)
+Writing at 0x000beda3... (72 %)
+Writing at 0x000c4429... (75 %)
+Writing at 0x000c9e71... (77 %)
+Writing at 0x000cf78a... (80 %)
+Writing at 0x000d58ef... (82 %)
+Writing at 0x000db128... (85 %)
+Writing at 0x000e21bc... (87 %)
+Writing at 0x000ebb86... (90 %)
+Writing at 0x000f1c3e... (92 %)
+Writing at 0x000f7b36... (95 %)
+Writing at 0x000fd8d6... (97 %)
+Writing at 0x00103277... (100 %)
+Wrote 1011616 bytes (649719 compressed) at 0x00010000 in 16.6 seconds (effective 488.3 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 105...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.1 seconds (effective 278.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

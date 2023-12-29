@@ -1,0 +1,1079 @@
+0x02 (10 c�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x1758
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc00
+load:0x403cc700,len:0x2e04
+entry 0x403c9908
+[0;32mI (27) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Dec 29 2023 15:02:31[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.1[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=28104h (164100) map[0m
+[0;32mI (129) esp_image: segment 1: paddr=0003812c vaddr=3fc9a300 size=04d70h ( 19824) load[0m
+[0;32mI (134) esp_image: segment 2: paddr=0003cea4 vaddr=40374000 size=03174h ( 12660) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=b3dbch (736700) map[0m
+[0;32mI (276) esp_image: segment 4: paddr=000f3de4 vaddr=40377174 size=1315ch ( 78172) load[0m
+[0;32mI (303) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (303) boot: Disabling RNG early entropy source...[0m
+[0;32mI (314) cpu_start: Multicore app[0m
+[0;32mI (314) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (315) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (318) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (323) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (328) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (334) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (339) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (345) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (350) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (356) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (362) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (368) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (373) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (377) esp_psram: Speed: 80MHz[0m
+[0;32mI (462) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (482) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (482) cpu_start: Pro cpu up.[0m
+[0;32mI (483) cpu_start: Starting app cpu, entry point is 0x40375790[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (887) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (896) cpu_start: Pro cpu start user code[0m
+[0;32mI (896) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (896) cpu_start: Application information:[0m
+[0;32mI (899) cpu_start: Project name:     shopify_display[0m
+[0;32mI (904) cpu_start: App version:      56578fe-dirty[0m
+[0;32mI (910) cpu_start: Compile time:     Dec 29 2023 15:02:17[0m
+[0;32mI (916) cpu_start: ELF file SHA256:  eccc2d4017f17066...[0m
+[0;32mI (922) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (927) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (932) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (937) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (941) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (949) heap_init: At 3FCA32B0 len 00046460 (281 KiB): DRAM[0m
+[0;32mI (955) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (962) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (968) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (974) esp_psram: Adding pool of 7232K of PSRAM memory to heap allocator[0m
+[0;32mI (982) spi_flash: detected chip: generic[0m
+[0;32mI (986) spi_flash: flash io: dio[0m
+[0;32mI (990) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (997) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1004) app_start: Starting scheduler on CPU0[0m
+[0;32mI (1009) app_start: Starting scheduler on CPU1[0m
+[0;32mI (1009) main_task: Started on CPU0[0m
+[0;32mI (1019) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1029) main_task: Calling app_main()[0m
+[0;32mI (1039) main_task: Returned from app_main()[0m
+[0;32mI (1039) sensorTask.c: Enable request timer[0m
+[0;32mI (1039) GUI: Turn off LCD backlight[0m
+[0;32mI (1049) gpio: GPIO[45]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1059) GUI: Install RGB LCD panel driver[0m
+[0;32mI (1079) GUI: Register event callbacks[0m
+[0;32mI (1079) GUI: Initialize RGB LCD panel[0m
+[0;32mI (1079) GUI: Turn on LCD backlight[0m
+[0;32mI (1079) GUI: Initialize LVGL library[0m
+[0;32mI (1089) GUI: Allocate separate LVGL draw buffers from PSRAM[0m
+[0;32mI (1099) GUI: Register display driver to LVGL[0m
+[0;32mI (1099) GUI: Install LVGL tick timer[0m
+[0;32mI (1099) GUI: Initiate I2C[0m
+[0;32mI (1109) GUI: Initialize I2C[0m
+[0;32mI (1109) GUI: Initialize touch IO (I2C)[0m
+[0;32mI (1119) GUI: Initialize touch controller GT911[0m
+[0;32mI (1119) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (1129) GT911: TouchPad_Config_Version:130[0m
+[0;32mI (1129) GUI: Connect GT911 Touch to LVGL Touch[0m
+[0;32mI (1189) ui_events.c: Starting API Request Timer[0m
+[0;32mI (1189) pp: pp rom version: e7ae62f[0m
+[0;32mI (1189) net80211: net80211 rom version: e7ae62f[0m
+I (1199) wifi:wifi driver task: 3fcbf5f0, prio:23, stack:6656, core=0
+I (1199) wifi:wifi firmware version: 91b9630
+I (1209) wifi:wifi certification version: v7.0
+I (1209) wifi:config NVS flash: enabled
+I (1209) wifi:config nano formating: disabled
+I (1219) wifi:Init data frame dynamic rx buffer num: 32
+I (1219) wifi:Init static rx mgmt buffer num: 5
+I (1229) wifi:Init management short buffer num: 32
+I (1229) wifi:Init static tx buffer num: 16
+I (1229) wifi:Init tx cache buffer num: 32
+I (1239) wifi:Init static tx FG buffer num: 2
+I (1239) wifi:Init static rx buffer size: 1600
+I (1249) wifi:Init static rx buffer num: 10
+I (1249) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1249) wifi_init: rx ba win: 6[0m
+[0;32mI (1259) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1259) wifi_init: udp mbox: 6[0m
+[0;32mI (1269) wifi_init: tcp mbox: 6[0m
+[0;32mI (1269) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1269) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1279) wifi_init: tcp mss: 1440[0m
+[0;32mI (1279) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1289) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1289) phy_init: phy_version 620,ec7ec30,Sep  5 2023,13:49:13[0m
+I (1329) wifi:mode : sta (f4:12:fa:ce:63:a0)
+I (1329) wifi:enable tsf
+[0;32mI (1329) General: TOTAL: 383835[0m
+[0;32mI (1329) General: FREE: 149671[0m
+[0;32mI (1329) General: Wifi Connect[0m
+[0;32mI (1329) General: LARGEST BLOCK: 62464[0m
+[0;32mI (1339) General: wifi_init_sta finished.[0m
+I (1339) wifi:flush txq
+I (1339) wifi:stop sw txq
+I (1349) wifi:lmac stop hw txq
+I (1349) wifi:mode : sta (f4:12:fa:ce:63:a0)
+I (1349) wifi:enable tsf
+[0;32mI (1359) General: Wifi Connect[0m
+[0;32mI (3769) General: retry to connect to the AP[0m
+[0;32mI (3769) General: connect to the AP fail[0m
+[0;32mI (6169) General: retry to connect to the AP[0m
+[0;32mI (6169) General: connect to the AP fail[0m
+[0;32mI (6189) sensorTask.c: API call would run[0m
+[0;32mI (8579) General: retry to connect to the AP[0m
+[0;32mI (8579) General: connect to the AP fail[0m
+[0;32mI (10979) General: retry to connect to the AP[0m
+[0;32mI (10979) General: connect to the AP fail[0m
+[0;32mI (11189) sensorTask.c: API call would run[0m
+[0;32mI (13389) General: retry to connect to the AP[0m
+[0;32mI (13389) General: connect to the AP fail[0m
+[0;32mI (15789) General: connect to the AP fail[0m
+[0;32mI (15789) General: Failed to connect to SSID:SSID, password:PASS[0m
+[0;32mI (16189) sensorTask.c: API call would run[0m
+[0;32mI (21189) sensorTask.c: API call would run[0m
+[0;32mI (26189) sensorTask.c: API call would run[0m
+[0;32mI (31189) sensorTask.c: API call would run[0m
+[0;32mI (36189) sensorTask.c: API call would run[0m
+[0;32mI (41189) sensorTask.c: API call would run[0m
+[0;32mI (46189) sensorTask.c: API call would run[0m
+[0;32mI (51189) sensorTask.c: API call would run[0m
+[0;32mI (56189) sensorTask.c: API call would run[0m
+[0;32mI (61189) sensorTask.c: API call would run[0m
+[0;32mI (66189) sensorTask.c: API call would run[0m
+[0;32mI (71189) sensorTask.c: API call would run[0m
+[0;32mI (76189) sensorTask.c: API call would run[0m
+[0;32mI (81189) sensorTask.c: API call would run[0m
+[0;32mI (86189) sensorTask.c: API call would run[0m
+[0;32mI (91189) sensorTask.c: API call would run[0m
+[0;32mI (96189) sensorTask.c: API call would run[0m
+[0;32mI (101189) sensorTask.c: API call would run[0m
+[0;32mI (106189) sensorTask.c: API call would run[0m
+[0;32mI (111189) sensorTask.c: API call would run[0m
+[0;32mI (116189) sensorTask.c: API call would run[0m
+[0;32mI (121189) sensorTask.c: API call would run[0m
+[0;32mI (126189) sensorTask.c: API call would run[0m
+[0;32mI (131189) sensorTask.c: API call would run[0m
+[0;32mI (136189) sensorTask.c: API call would run[0m
+[0;32mI (141189) sensorTask.c: API call would run[0m
+[0;32mI (146189) sensorTask.c: API call would run[0m
+[0;32mI (151189) sensorTask.c: API call would run[0m
+[0;32mI (156189) sensorTask.c: API call would run[0m
+[0;32mI (161189) sensorTask.c: API call would run[0m
+[0;32mI (166189) sensorTask.c: API call would run[0m
+[0;32mI (171189) sensorTask.c: API call would run[0m
+[0;32mI (176189) sensorTask.c: API call would run[0m
+[0;32mI (181189) sensorTask.c: API call would run[0m
+[0;32mI (186189) sensorTask.c: API call would run[0m
+[0;32mI (191189) sensorTask.c: API call would run[0m
+[0;32mI (196189) sensorTask.c: API call would run[0m
+[0;32mI (201189) sensorTask.c: API call would run[0m
+[0;32mI (206189) sensorTask.c: API call would run[0m
+[0;32mI (211189) sensorTask.c: API call would run[0m
+[0;32mI (216189) sensorTask.c: API call would run[0m
+[0;32mI (221189) sensorTask.c: API call would run[0m
+[0;32mI (226189) sensorTask.c: API call would run[0m
+[0;32mI (231189) sensorTask.c: API call would run[0m
+[0;32mI (236189) sensorTask.c: API call would run[0m
+[0;32mI (241189) sensorTask.c: API call would run[0m
+[0;32mI (246189) sensorTask.c: API call would run[0m
+[0;32mI (251189) sensorTask.c: API call would run[0m
+[0;32mI (256189) sensorTask.c: API call would run[0m
+[0;32mI (261189) sensorTask.c: API call would run[0m
+[0;32mI (266189) sensorTask.c: API call would run[0m
+[0;32mI (271189) sensorTask.c: API call would run[0m
+[0;32mI (276189) sensorTask.c: API call would run[0m
+[0;32mI (281189) sensorTask.c: API call would run[0m
+[0;32mI (286189) sensorTask.c: API call would run[0m
+[0;32mI (291189) sensorTask.c: API call would run[0m
+[0;32mI (296189) sensorTask.c: API call would run[0m
+[0;32mI (301189) sensorTask.c: API call would run[0m
+[0;32mI (306189) sensorTask.c: API call would run[0m
+[0;32mI (311189) sensorTask.c: API call would run[0m
+[0;32mI (316189) sensorTask.c: API call would run[0m
+[0;32mI (321189) sensorTask.c: API call would run[0m
+[0;32mI (326189) sensorTask.c: API call would run[0m
+[0;32mI (331189) sensorTask.c: API call would run[0m
+[0;32mI (336189) sensorTask.c: API call would run[0m
+[0;32mI (341189) sensorTask.c: API call would run[0m
+[0;32mI (346189) sensorTask.c: API call would run[0m
+[0;32mI (351189) sensorTask.c: API call would run[0m
+[0;32mI (356189) sensorTask.c: API call would run[0m
+[0;32mI (361189) sensorTask.c: API call would run[0m
+[0;32mI (366189) sensorTask.c: API call would run[0m
+[0;32mI (371189) sensorTask.c: API call would run[0m
+[0;32mI (376189) sensorTask.c: API call would run[0m
+[0;32mI (381189) sensorTask.c: API call would run[0m
+[0;32mI (386189) sensorTask.c: API call would run[0m
+[0;32mI (391189) sensorTask.c: API call would run[0m
+[0;32mI (396189) sensorTask.c: API call would run[0m
+[0;32mI (401189) sensorTask.c: API call would run[0m
+[0;32mI (406189) sensorTask.c: API call would run[0m
+[0;32mI (411189) sensorTask.c: API call would run[0m
+[0;32mI (416189) sensorTask.c: API call would run[0m
+[0;32mI (421189) sensorTask.c: API call would run[0m
+[0;32mI (426189) sensorTask.c: API call would run[0m
+[0;32mI (431189) sensorTask.c: API call would run[0m
+[0;32mI (436189) sensorTask.c: API call would run[0m
+[0;32mI (441189) sensorTask.c: API call would run[0m
+[0;32mI (446189) sensorTask.c: API call would run[0m
+[0;32mI (451189) sensorTask.c: API call would run[0m
+[0;32mI (456189) sensorTask.c: API call would run[0m
+[0;32mI (461189) sensorTask.c: API call would run[0m
+[0;32mI (466189) sensorTask.c: API call would run[0m
+[0;32mI (471189) sensorTask.c: API call would run[0m
+[0;32mI (476189) sensorTask.c: API call would run[0m
+[0;32mI (481189) sensorTask.c: API call would run[0m
+[0;32mI (486189) sensorTask.c: API call would run[0m
+[0;32mI (491189) sensorTask.c: API call would run[0m
+[0;32mI (496189) sensorTask.c: API call would run[0m
+[0;32mI (501189) sensorTask.c: API call would run[0m
+[0;32mI (506189) sensorTask.c: API call would run[0m
+[0;32mI (511189) sensorTask.c: API call would run[0m
+[0;32mI (516189) sensorTask.c: API call would run[0m
+[0;32mI (521189) sensorTask.c: API call would run[0m
+[0;32mI (526189) sensorTask.c: API call would run[0m
+[0;32mI (531189) sensorTask.c: API call would run[0m
+[0;32mI (536189) sensorTask.c: API call would run[0m
+[0;32mI (541189) sensorTask.c: API call would run[0m
+[0;32mI (546189) sensorTask.c: API call would run[0m
+[0;32mI (551189) sensorTask.c: API call would run[0m
+[0;32mI (556189) sensorTask.c: API call would run[0m
+[0;32mI (561189) sensorTask.c: API call would run[0m
+[0;32mI (566189) sensorTask.c: API call would run[0m
+[0;32mI (571189) sensorTask.c: API call would run[0m
+[0;32mI (576189) sensorTask.c: API call would run[0m
+[0;32mI (581189) sensorTask.c: API call would run[0m
+[0;32mI (586189) sensorTask.c: API call would run[0m
+[0;32mI (591189) sensorTask.c: API call would run[0m
+[0;32mI (596189) sensorTask.c: API call would run[0m
+[0;32mI (601189) sensorTask.c: API call would run[0m
+[0;32mI (606189) sensorTask.c: API call would run[0m
+[0;32mI (611189) sensorTask.c: API call would run[0m
+[0;32mI (616189) sensorTask.c: API call would run[0m
+[0;32mI (621189) sensorTask.c: API call would run[0m
+[0;32mI (626189) sensorTask.c: API call would run[0m
+[0;32mI (631189) sensorTask.c: API call would run[0m
+[0;32mI (636189) sensorTask.c: API call would run[0m
+[0;32mI (641189) sensorTask.c: API call would run[0m
+[0;32mI (646189) sensorTask.c: API call would run[0m
+[0;32mI (651189) sensorTask.c: API call would run[0m
+[0;32mI (656189) sensorTask.c: API call would run[0m
+[0;32mI (661189) sensorTask.c: API call would run[0m
+[0;32mI (666189) sensorTask.c: API call would run[0m
+[0;32mI (671189) sensorTask.c: API call would run[0m
+[0;32mI (676189) sensorTask.c: API call would run[0m
+[0;32mI (681189) sensorTask.c: API call would run[0m
+[0;32mI (686189) sensorTask.c: API call would run[0m
+[0;32mI (691189) sensorTask.c: API call would run[0m
+[0;32mI (696189) sensorTask.c: API call would run[0m
+[0;32mI (701189) sensorTask.c: API call would run[0m
+[0;32mI (706189) sensorTask.c: API call would run[0m
+[0;32mI (711189) sensorTask.c: API call would run[0m
+[0;32mI (716189) sensorTask.c: API call would run[0m
+[0;32mI (721189) sensorTask.c: API call would run[0m
+[0;32mI (726189) sensorTask.c: API call would run[0m
+[0;32mI (731189) sensorTask.c: API call would run[0m
+[0;32mI (736189) sensorTask.c: API call would run[0m
+[0;32mI (741189) sensorTask.c: API call would run[0m
+[0;32mI (746189) sensorTask.c: API call would run[0m
+[0;32mI (751189) sensorTask.c: API call would run[0m
+[0;32mI (756189) sensorTask.c: API call would run[0m
+[0;32mI (761189) sensorTask.c: API call would run[0m
+[0;32mI (766189) sensorTask.c: API call would run[0m
+[0;32mI (771189) sensorTask.c: API call would run[0m
+[0;32mI (776189) sensorTask.c: API call would run[0m
+[0;32mI (781189) sensorTask.c: API call would run[0m
+[0;32mI (786189) sensorTask.c: API call would run[0m
+[0;32mI (791189) sensorTask.c: API call would run[0m
+[0;32mI (796189) sensorTask.c: API call would run[0m
+[0;32mI (801189) sensorTask.c: API call would run[0m
+[0;32mI (806189) sensorTask.c: API call would run[0m
+[0;32mI (811189) sensorTask.c: API call would run[0m
+[0;32mI (816189) sensorTask.c: API call would run[0m
+[0;32mI (821189) sensorTask.c: API call would run[0m
+[0;32mI (826189) sensorTask.c: API call would run[0m
+[0;32mI (831189) sensorTask.c: API call would run[0m
+[0;32mI (836189) sensorTask.c: API call would run[0m
+[0;32mI (841189) sensorTask.c: API call would run[0m
+[0;32mI (846189) sensorTask.c: API call would run[0m
+[0;32mI (851189) sensorTask.c: API call would run[0m
+[0;32mI (856189) sensorTask.c: API call would run[0m
+[0;32mI (861189) sensorTask.c: API call would run[0m
+[0;32mI (866189) sensorTask.c: API call would run[0m
+[0;32mI (871189) sensorTask.c: API call would run[0m
+[0;32mI (876189) sensorTask.c: API call would run[0m
+[0;32mI (881189) sensorTask.c: API call would run[0m
+[0;32mI (886189) sensorTask.c: API call would run[0m
+[0;32mI (891189) sensorTask.c: API call would run[0m
+[0;32mI (896189) sensorTask.c: API call would run[0m
+[0;32mI (901189) sensorTask.c: API call would run[0m
+[0;32mI (906189) sensorTask.c: API call would run[0m
+[0;32mI (911189) sensorTask.c: API call would run[0m
+[0;32mI (916189) sensorTask.c: API call would run[0m
+[0;32mI (921189) sensorTask.c: API call would run[0m
+[0;32mI (926189) sensorTask.c: API call would run[0m
+[0;32mI (931189) sensorTask.c: API call would run[0m
+[0;32mI (936189) sensorTask.c: API call would run[0m
+[0;32mI (941189) sensorTask.c: API call would run[0m
+[0;32mI (946189) sensorTask.c: API call would run[0m
+[0;32mI (951189) sensorTask.c: API call would run[0m
+[0;32mI (956189) sensorTask.c: API call would run[0m
+[0;32mI (961189) sensorTask.c: API call would run[0m
+[0;32mI (966189) sensorTask.c: API call would run[0m
+[0;32mI (971189) sensorTask.c: API call would run[0m
+[0;32mI (976189) sensorTask.c: API call would run[0m
+[0;32mI (981189) sensorTask.c: API call would run[0m
+[0;32mI (986189) sensorTask.c: API call would run[0m
+[0;32mI (991189) sensorTask.c: API call would run[0m
+[0;32mI (996189) sensorTask.c: API call would run[0m
+[0;32mI (1001189) sensorTask.c: API call would run[0m
+[0;32mI (1006189) sensorTask.c: API call would run[0m
+[0;32mI (1011189) sensorTask.c: API call would run[0m
+[0;32mI (1016189) sensorTask.c: API call would run[0m
+[0;32mI (1021189) sensorTask.c: API call would run[0m
+[0;32mI (1026189) sensorTask.c: API call would run[0m
+[0;32mI (1031189) sensorTask.c: API call would run[0m
+[0;32mI (1036189) sensorTask.c: API call would run[0m
+[0;32mI (1041189) sensorTask.c: API call would run[0m
+[0;32mI (1046189) sensorTask.c: API call would run[0m
+[0;32mI (1051189) sensorTask.c: API call would run[0m
+[0;32mI (1056189) sensorTask.c: API call would run[0m
+[0;32mI (1061189) sensorTask.c: API call would run[0m
+[0;32mI (1066189) sensorTask.c: API call would run[0m
+[0;32mI (1071189) sensorTask.c: API call would run[0m
+[0;32mI (1076189) sensorTask.c: API call would run[0m
+[0;32mI (1081189) sensorTask.c: API call would run[0m
+[0;32mI (1086189) sensorTask.c: API call would run[0m
+[0;32mI (1091189) sensorTask.c: API call would run[0m
+[0;32mI (1096189) sensorTask.c: API call would run[0m
+[0;32mI (1101189) sensorTask.c: API call would run[0m
+[0;32mI (1106189) sensorTask.c: API call would run[0m
+[0;32mI (1111189) sensorTask.c: API call would run[0m
+[0;32mI (1116189) sensorTask.c: API call would run[0m
+[0;32mI (1121189) sensorTask.c: API call would run[0m
+[0;32mI (1126189) sensorTask.c: API call would run[0m
+[0;32mI (1131189) sensorTask.c: API call would run[0m
+[0;32mI (1136189) sensorTask.c: API call would run[0m
+[0;32mI (1141189) sensorTask.c: API call would run[0m
+[0;32mI (1146189) sensorTask.c: API call would run[0m
+[0;32mI (1151189) sensorTask.c: API call would run[0m
+[0;32mI (1156189) sensorTask.c: API call would run[0m
+[0;32mI (1161189) sensorTask.c: API call would run[0m
+[0;32mI (1166189) sensorTask.c: API call would run[0m
+[0;32mI (1171189) sensorTask.c: API call would run[0m
+[0;32mI (1176189) sensorTask.c: API call would run[0m
+[0;32mI (1181189) sensorTask.c: API call would run[0m
+[0;32mI (1186189) sensorTask.c: API call would run[0m
+[0;32mI (1191189) sensorTask.c: API call would run[0m
+[0;32mI (1196189) sensorTask.c: API call would run[0m
+[0;32mI (1201189) sensorTask.c: API call would run[0m
+[0;32mI (1206189) sensorTask.c: API call would run[0m
+[0;32mI (1211189) sensorTask.c: API call would run[0m
+[0;32mI (1216189) sensorTask.c: API call would run[0m
+[0;32mI (1221189) sensorTask.c: API call would run[0m
+[0;32mI (1226189) sensorTask.c: API call would run[0m
+[0;32mI (1231189) sensorTask.c: API call would run[0m
+[0;32mI (1236189) sensorTask.c: API call would run[0m
+[0;32mI (1241189) sensorTask.c: API call would run[0m
+[0;32mI (1246189) sensorTask.c: API call would run[0m
+[0;32mI (1251189) sensorTask.c: API call would run[0m
+[0;32mI (1256189) sensorTask.c: API call would run[0m
+[0;32mI (1261189) sensorTask.c: API call would run[0m
+[0;32mI (1266189) sensorTask.c: API call would run[0m
+[0;32mI (1271189) sensorTask.c: API call would run[0m
+[0;32mI (1276189) sensorTask.c: API call would run[0m
+[0;32mI (1281189) sensorTask.c: API call would run[0m
+[0;32mI (1286189) sensorTask.c: API call would run[0m
+[0;32mI (1291189) sensorTask.c: API call would run[0m
+[0;32mI (1296189) sensorTask.c: API call would run[0m
+[0;32mI (1301189) sensorTask.c: API call would run[0m
+[0;32mI (1306189) sensorTask.c: API call would run[0m
+[0;32mI (1311189) sensorTask.c: API call would run[0m
+[0;32mI (1316189) sensorTask.c: API call would run[0m
+[0;32mI (1321189) sensorTask.c: API call would run[0m
+[0;32mI (1326189) sensorTask.c: API call would run[0m
+[0;32mI (1331189) sensorTask.c: API call would run[0m
+[0;32mI (1336189) sensorTask.c: API call would run[0m
+[0;32mI (1341189) sensorTask.c: API call would run[0m
+[0;32mI (1346189) sensorTask.c: API call would run[0m
+[0;32mI (1351189) sensorTask.c: API call would run[0m
+[0;32mI (1356189) sensorTask.c: API call would run[0m
+[0;32mI (1361189) sensorTask.c: API call would run[0m
+[0;32mI (1366189) sensorTask.c: API call would run[0m
+[0;32mI (1371189) sensorTask.c: API call would run[0m
+[0;32mI (1376189) sensorTask.c: API call would run[0m
+[0;32mI (1381189) sensorTask.c: API call would run[0m
+[0;32mI (1386189) sensorTask.c: API call would run[0m
+[0;32mI (1391189) sensorTask.c: API call would run[0m
+[0;32mI (1396189) sensorTask.c: API call would run[0m
+[0;32mI (1401189) sensorTask.c: API call would run[0m
+[0;32mI (1406189) sensorTask.c: API call would run[0m
+[0;32mI (1411189) sensorTask.c: API call would run[0m
+[0;32mI (1416189) sensorTask.c: API call would run[0m
+[0;32mI (1421189) sensorTask.c: API call would run[0m
+[0;32mI (1426189) sensorTask.c: API call would run[0m
+[0;32mI (1431189) sensorTask.c: API call would run[0m
+[0;32mI (1436189) sensorTask.c: API call would run[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x1758
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc00
+load:0x403cc700,len:0x2e04
+entry 0x403c9908
+[0;32mI (27) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Dec 29 2023 15:02:31[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.1[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=28104h (164100) map[0m
+[0;32mI (129) esp_image: segment 1: paddr=0003812c vaddr=3fc9a300 size=04d70h ( 19824) load[0m
+[0;32mI (134) esp_image: segment 2: paddr=0003cea4 vaddr=40374000 size=03174h ( 12660) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=b3dbch (736700) map[0m
+[0;32mI (276) esp_image: segment 4: paddr=000f3de4 vaddr=40377174 size=1315ch ( 78172) load[0m
+[0;32mI (303) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (303) boot: Disabling RNG early entropy source...[0m
+[0;32mI (314) cpu_start: Multicore app[0m
+[0;32mI (314) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (315) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (318) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (323) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (328) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (334) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (339) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (345) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (350) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (356) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (362) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (368) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (373) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (377) esp_psram: Speed: 80MHz[0m
+[0;32mI (462) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (482) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (482) cpu_start: Pro cpu up.[0m
+[0;32mI (483) cpu_start: Starting app cpu, entry point is 0x40375790[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (887) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (896) cpu_start: Pro cpu start user code[0m
+[0;32mI (896) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (896) cpu_start: Application information:[0m
+[0;32mI (899) cpu_start: Project name:     shopify_display[0m
+[0;32mI (904) cpu_start: App version:      56578fe-dirty[0m
+[0;32mI (910) cpu_start: Compile time:     Dec 29 2023 15:02:17[0m
+[0;32mI (916) cpu_start: ELF file SHA256:  eccc2d4017f17066...[0m
+[0;32mI (922) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (927) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (932) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (937) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (941) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (949) heap_init: At 3FCA32B0 len 00046460 (281 KiB): DRAM[0m
+[0;32mI (955) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (962) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (968) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (974) esp_psram: Adding pool of 7232K of PSRAM memory to heap allocator[0m
+[0;32mI (982) spi_flash: detected chip: generic[0m
+[0;32mI (986) spi_flash: flash io: dio[0m
+[0;32mI (990) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (997) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1004) app_start: Starting scheduler on CPU0[0m
+[0;32mI (1009) app_start: Starting scheduler on CPU1[0m
+[0;32mI (1009) main_task: Started on CPU0[0m
+[0;32mI (1019) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1029) main_task: Calling app_main()[0m
+[0;32mI (1039) main_task: Returned from app_main()[0m
+[0;32mI (1039) sensorTask.c: Enable request timer[0m
+[0;32mI (1039) GUI: Turn off LCD backlight[0m
+[0;32mI (1049) gpio: GPIO[45]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1059) GUI: Install RGB LCD panel driver[0m
+[0;32mI (1079) GUI: Register event callbacks[0m
+[0;32mI (1079) GUI: Initialize RGB LCD panel[0m
+[0;32mI (1079) GUI: Turn on LCD backlight[0m
+[0;32mI (1079) GUI: Initialize LVGL library[0m
+[0;32mI (1089) GUI: Allocate separate LVGL draw buffers from PSRAM[0m
+[0;32mI (1099) GUI: Register display driver to LVGL[0m
+[0;32mI (1099) GUI: Install LVGL tick timer[0m
+[0;32mI (1099) GUI: Initiate I2C[0m
+[0;32mI (1109) GUI: Initialize I2C[0m
+[0;32mI (1109) GUI: Initialize touch IO (I2C)[0m
+[0;32mI (1119) GUI: Initialize touch controller GT911[0m
+[0;32mI (1119) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (1129) GT911: TouchPad_Config_Version:130[0m
+[0;32mI (1129) GUI: Connect GT911 Touch to LVGL Touch[0m
+[0;32mI (1189) ui_events.c: Starting API Request Timer[0m
+[0;32mI (1189) pp: pp rom version: e7ae62f[0m
+[0;32mI (1189) net80211: net80211 rom version: e7ae62f[0m
+I (1199) wifi:wifi driver task: 3fcbf5f0, prio:23, stack:6656, core=0
+I (1199) wifi:wifi firmware version: 91b9630
+I (1209) wifi:wifi certification version: v7.0
+I (1209) wifi:config NVS flash: enabled
+I (1209) wifi:config nano formating: disabled
+I (1219) wifi:Init data frame dynamic rx buffer num: 32
+I (1219) wifi:Init static rx mgmt buffer num: 5
+I (1229) wifi:Init management short buffer num: 32
+I (1229) wifi:Init static tx buffer num: 16
+I (1229) wifi:Init tx cache buffer num: 32
+I (1239) wifi:Init static tx FG buffer num: 2
+I (1239) wifi:Init static rx buffer size: 1600
+I (1249) wifi:Init static rx buffer num: 10
+I (1249) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1249) wifi_init: rx ba win: 6[0m
+[0;32mI (1259) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1259) wifi_init: udp mbox: 6[0m
+[0;32mI (1269) wifi_init: tcp mbox: 6[0m
+[0;32mI (1269) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1269) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1279) wifi_init: tcp mss: 1440[0m
+[0;32mI (1279) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1289) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1289) phy_init: phy_version 620,ec7ec30,Sep  5 2023,13:49:13[0m
+I (1329) wifi:mode : sta (f4:12:fa:ce:63:a0)
+I (1329) wifi:enable tsf
+[0;32mI (1329) General: TOTAL: 383835[0m
+[0;32mI (1329) General: FREE: 149671[0m
+[0;32mI (1329) General: Wifi Connect[0m
+[0;32mI (1329) General: LARGEST BLOCK: 62464[0m
+[0;32mI (1339) General: wifi_init_sta finished.[0m
+I (1339) wifi:flush txq
+I (1339) wifi:stop sw txq
+I (1349) wifi:lmac stop hw txq
+I (1349) wifi:mode : sta (f4:12:fa:ce:63:a0)
+I (1349) wifi:enable tsf
+[0;32mI (1359) General: Wifi Connect[0m
+[0;32mI (3769) General: retry to connect to the AP[0m
+[0;32mI (3769) General: connect to the AP fail[0m
+[0;32mI (6169) General: retry to connect to the AP[0m
+[0;32mI (6169) General: connect to the AP fail[0m
+[0;32mI (6189) sensorTask.c: API call would run[0m
+[0;32mI (8579) General: retry to connect to the AP[0m
+[0;32mI (8579) General: connect to the AP fail[0m
+[0;32mI (10979) General: retry to connect to the AP[0m
+[0;32mI (10979) General: connect to the AP fail[0m
+[0;32mI (11189) sensorTask.c: API call would run[0m
+[0;32mI (13389) General: retry to connect to the AP[0m
+[0;32mI (13389) General: connect to the AP fail[0m
+[0;32mI (15789) General: connect to the AP fail[0m
+[0;32mI (15789) General: Failed to connect to SSID:SSID, password:PASS[0m
+[0;32mI (16189) sensorTask.c: API call would run[0m
+[0;32mI (21189) sensorTask.c: API call would run[0m
+[0;32mI (26189) sensorTask.c: API call would run[0m
+[0;32mI (31189) sensorTask.c: API call would run[0m
+[0;32mI (36189) sensorTask.c: API call would run[0m
+[0;32mI (41189) sensorTask.c: API call would run[0m
+[0;32mI (46189) sensorTask.c: API call would run[0m
+[0;32mI (51189) sensorTask.c: API call would run[0m
+[0;32mI (56189) sensorTask.c: API call would run[0m
+[0;32mI (61189) sensorTask.c: API call would run[0m
+[0;32mI (66189) sensorTask.c: API call would run[0m
+[0;32mI (71189) sensorTask.c: API call would run[0m
+[0;32mI (76189) sensorTask.c: API call would run[0m
+[0;32mI (81189) sensorTask.c: API call would run[0m
+[0;32mI (86189) sensorTask.c: API call would run[0m
+[0;32mI (91189) sensorTask.c: API call would run[0m
+[0;32mI (96189) sensorTask.c: API call would run[0m
+[0;32mI (101189) sensorTask.c: API call would run[0m
+[0;32mI (106189) sensorTask.c: API call would run[0m
+[0;32mI (111189) sensorTask.c: API call would run[0m
+[0;32mI (116189) sensorTask.c: API call would run[0m
+[0;32mI (121189) sensorTask.c: API call would run[0m
+[0;32mI (126189) sensorTask.c: API call would run[0m
+[0;32mI (131189) sensorTask.c: API call would run[0m
+[0;32mI (136189) sensorTask.c: API call would run[0m
+[0;32mI (141189) sensorTask.c: API call would run[0m
+[0;32mI (146189) sensorTask.c: API call would run[0m
+[0;32mI (151189) sensorTask.c: API call would run[0m
+[0;32mI (156189) sensorTask.c: API call would run[0m
+[0;32mI (161189) sensorTask.c: API call would run[0m
+[0;32mI (166189) sensorTask.c: API call would run[0m
+[0;32mI (171189) sensorTask.c: API call would run[0m
+[0;32mI (176189) sensorTask.c: API call would run[0m
+[0;32mI (181189) sensorTask.c: API call would run[0m
+[0;32mI (186189) sensorTask.c: API call would run[0m
+[0;32mI (191189) sensorTask.c: API call would run[0m
+[0;32mI (196189) sensorTask.c: API call would run[0m
+[0;32mI (201189) sensorTask.c: API call would run[0m
+[0;32mI (206189) sensorTask.c: API call would run[0m
+[0;32mI (211189) sensorTask.c: API call would run[0m
+[0;32mI (216189) sensorTask.c: API call would run[0m
+[0;32mI (221189) sensorTask.c: API call would run[0m
+[0;32mI (226189) sensorTask.c: API call would run[0m
+[0;32mI (231189) sensorTask.c: API call would run[0m
+[0;32mI (236189) sensorTask.c: API call would run[0m
+[0;32mI (241189) sensorTask.c: API call would run[0m
+[0;32mI (246189) sensorTask.c: API call would run[0m
+[0;32mI (251189) sensorTask.c: API call would run[0m
+[0;32mI (256189) sensorTask.c: API call would run[0m
+[0;32mI (261189) sensorTask.c: API call would run[0m
+[0;32mI (266189) sensorTask.c: API call would run[0m
+[0;32mI (271189) sensorTask.c: API call would run[0m
+[0;32mI (276189) sensorTask.c: API call would run[0m
+[0;32mI (281189) sensorTask.c: API call would run[0m
+[0;32mI (286189) sensorTask.c: API call would run[0m
+[0;32mI (291189) sensorTask.c: API call would run[0m
+[0;32mI (296189) sensorTask.c: API call would run[0m
+[0;32mI (301189) sensorTask.c: API call would run[0m
+[0;32mI (306189) sensorTask.c: API call would run[0m
+[0;32mI (311189) sensorTask.c: API call would run[0m
+[0;32mI (316189) sensorTask.c: API call would run[0m
+[0;32mI (321189) sensorTask.c: API call would run[0m
+[0;32mI (326189) sensorTask.c: API call would run[0m
+[0;32mI (331189) sensorTask.c: API call would run[0m
+[0;32mI (336189) sensorTask.c: API call would run[0m
+[0;32mI (341189) sensorTask.c: API call would run[0m
+[0;32mI (346189) sensorTask.c: API call would run[0m
+[0;32mI (351189) sensorTask.c: API call would run[0m
+[0;32mI (356189) sensorTask.c: API call would run[0m
+[0;32mI (361189) sensorTask.c: API call would run[0m
+[0;32mI (366189) sensorTask.c: API call would run[0m
+[0;32mI (371189) sensorTask.c: API call would run[0m
+[0;32mI (376189) sensorTask.c: API call would run[0m
+[0;32mI (381189) sensorTask.c: API call would run[0m
+[0;32mI (386189) sensorTask.c: API call would run[0m
+[0;32mI (391189) sensorTask.c: API call would run[0m
+[0;32mI (396189) sensorTask.c: API call would run[0m
+[0;32mI (401189) sensorTask.c: API call would run[0m
+[0;32mI (406189) sensorTask.c: API call would run[0m
+[0;32mI (411189) sensorTask.c: API call would run[0m
+[0;32mI (416189) sensorTask.c: API call would run[0m
+[0;32mI (421189) sensorTask.c: API call would run[0m
+[0;32mI (426189) sensorTask.c: API call would run[0m
+[0;32mI (431189) sensorTask.c: API call would run[0m
+[0;32mI (436189) sensorTask.c: API call would run[0m
+[0;32mI (441189) sensorTask.c: API call would run[0m
+[0;32mI (446189) sensorTask.c: API call would run[0m
+[0;32mI (451189) sensorTask.c: API call would run[0m
+[0;32mI (456189) sensorTask.c: API call would run[0m
+[0;32mI (461189) sensorTask.c: API call would run[0m
+[0;32mI (466189) sensorTask.c: API call would run[0m
+[0;32mI (471189) sensorTask.c: API call would run[0m
+[0;32mI (476189) sensorTask.c: API call would run[0m
+[0;32mI (481189) sensorTask.c: API call would run[0m
+[0;32mI (486189) sensorTask.c: API call would run[0m
+[0;32mI (491189) sensorTask.c: API call would run[0m
+[0;32mI (496189) sensorTask.c: API call would run[0m
+[0;32mI (501189) sensorTask.c: API call would run[0m
+[0;32mI (506189) sensorTask.c: API call would run[0m
+[0;32mI (511189) sensorTask.c: API call would run[0m
+[0;32mI (516189) sensorTask.c: API call would run[0m
+[0;32mI (521189) sensorTask.c: API call would run[0m
+[0;32mI (526189) sensorTask.c: API call would run[0m
+[0;32mI (531189) sensorTask.c: API call would run[0m
+[0;32mI (536189) sensorTask.c: API call would run[0m
+[0;32mI (541189) sensorTask.c: API call would run[0m
+[0;32mI (546189) sensorTask.c: API call would run[0m
+[0;32mI (551189) sensorTask.c: API call would run[0m
+[0;32mI (556189) sensorTask.c: API call would run[0m
+[0;32mI (561189) sensorTask.c: API call would run[0m
+[0;32mI (566189) sensorTask.c: API call would run[0m
+[0;32mI (571189) sensorTask.c: API call would run[0m
+[0;32mI (576189) sensorTask.c: API call would run[0m
+[0;32mI (581189) sensorTask.c: API call would run[0m
+[0;32mI (586189) sensorTask.c: API call would run[0m
+[0;32mI (591189) sensorTask.c: API call would run[0m
+[0;32mI (596189) sensorTask.c: API call would run[0m
+[0;32mI (601189) sensorTask.c: API call would run[0m
+[0;32mI (606189) sensorTask.c: API call would run[0m
+[0;32mI (611189) sensorTask.c: API call would run[0m
+[0;32mI (616189) sensorTask.c: API call would run[0m
+[0;32mI (621189) sensorTask.c: API call would run[0m
+[0;32mI (626189) sensorTask.c: API call would run[0m
+[0;32mI (631189) sensorTask.c: API call would run[0m
+[0;32mI (636189) sensorTask.c: API call would run[0m
+[0;32mI (641189) sensorTask.c: API call would run[0m
+[0;32mI (646189) sensorTask.c: API call would run[0m
+[0;32mI (651189) sensorTask.c: API call would run[0m
+[0;32mI (656189) sensorTask.c: API call would run[0m
+[0;32mI (661189) sensorTask.c: API call would run[0m
+[0;32mI (666189) sensorTask.c: API call would run[0m
+[0;32mI (671189) sensorTask.c: API call would run[0m
+[0;32mI (676189) sensorTask.c: API call would run[0m
+[0;32mI (681189) sensorTask.c: API call would run[0m
+[0;32mI (686189) sensorTask.c: API call would run[0m
+[0;32mI (691189) sensorTask.c: API call would run[0m
+[0;32mI (696189) sensorTask.c: API call would run[0m
+[0;32mI (701189) sensorTask.c: API call would run[0m
+[0;32mI (706189) sensorTask.c: API call would run[0m
+[0;32mI (711189) sensorTask.c: API call would run[0m
+[0;32mI (716189) sensorTask.c: API call would run[0m
+[0;32mI (721189) sensorTask.c: API call would run[0m
+[0;32mI (726189) sensorTask.c: API call would run[0m
+[0;32mI (731189) sensorTask.c: API call would run[0m
+[0;32mI (736189) sensorTask.c: API call would run[0m
+[0;32mI (741189) sensorTask.c: API call would run[0m
+[0;32mI (746189) sensorTask.c: API call would run[0m
+[0;32mI (751189) sensorTask.c: API call would run[0m
+[0;32mI (756189) sensorTask.c: API call would run[0m
+[0;32mI (761189) sensorTask.c: API call would run[0m
+[0;32mI (766189) sensorTask.c: API call would run[0m
+[0;32mI (771189) sensorTask.c: API call would run[0m
+[0;32mI (776189) sensorTask.c: API call would run[0m
+[0;32mI (781189) sensorTask.c: API call would run[0m
+[0;32mI (786189) sensorTask.c: API call would run[0m
+[0;32mI (791189) sensorTask.c: API call would run[0m
+[0;32mI (796189) sensorTask.c: API call would run[0m
+[0;32mI (801189) sensorTask.c: API call would run[0m
+[0;32mI (806189) sensorTask.c: API call would run[0m
+[0;32mI (811189) sensorTask.c: API call would run[0m
+[0;32mI (816189) sensorTask.c: API call would run[0m
+[0;32mI (821189) sensorTask.c: API call would run[0m
+[0;32mI (826189) sensorTask.c: API call would run[0m
+[0;32mI (831189) sensorTask.c: API call would run[0m
+[0;32mI (836189) sensorTask.c: API call would run[0m
+[0;32mI (841189) sensorTask.c: API call would run[0m
+[0;32mI (846189) sensorTask.c: API call would run[0m
+[0;32mI (851189) sensorTask.c: API call would run[0m
+[0;32mI (856189) sensorTask.c: API call would run[0m
+[0;32mI (861189) sensorTask.c: API call would run[0m
+[0;32mI (866189) sensorTask.c: API call would run[0m
+[0;32mI (871189) sensorTask.c: API call would run[0m
+[0;32mI (876189) sensorTask.c: API call would run[0m
+[0;32mI (881189) sensorTask.c: API call would run[0m
+[0;32mI (886189) sensorTask.c: API call would run[0m
+[0;32mI (891189) sensorTask.c: API call would run[0m
+[0;32mI (896189) sensorTask.c: API call would run[0m
+[0;32mI (901189) sensorTask.c: API call would run[0m
+[0;32mI (906189) sensorTask.c: API call would run[0m
+[0;32mI (911189) sensorTask.c: API call would run[0m
+[0;32mI (916189) sensorTask.c: API call would run[0m
+[0;32mI (921189) sensorTask.c: API call would run[0m
+[0;32mI (926189) sensorTask.c: API call would run[0m
+[0;32mI (931189) sensorTask.c: API call would run[0m
+[0;32mI (936189) sensorTask.c: API call would run[0m
+[0;32mI (941189) sensorTask.c: API call would run[0m
+[0;32mI (946189) sensorTask.c: API call would run[0m
+[0;32mI (951189) sensorTask.c: API call would run[0m
+[0;32mI (956189) sensorTask.c: API call would run[0m
+[0;32mI (961189) sensorTask.c: API call would run[0m
+[0;32mI (966189) sensorTask.c: API call would run[0m
+[0;32mI (971189) sensorTask.c: API call would run[0m
+[0;32mI (976189) sensorTask.c: API call would run[0m
+[0;32mI (981189) sensorTask.c: API call would run[0m
+[0;32mI (986189) sensorTask.c: API call would run[0m
+[0;32mI (991189) sensorTask.c: API call would run[0m
+[0;32mI (996189) sensorTask.c: API call would run[0m
+[0;32mI (1001189) sensorTask.c: API call would run[0m
+[0;32mI (1006189) sensorTask.c: API call would run[0m
+[0;32mI (1011189) sensorTask.c: API call would run[0m
+[0;32mI (1016189) sensorTask.c: API call would run[0m
+[0;32mI (1021189) sensorTask.c: API call would run[0m
+[0;32mI (1026189) sensorTask.c: API call would run[0m
+[0;32mI (1031189) sensorTask.c: API call would run[0m
+[0;32mI (1036189) sensorTask.c: API call would run[0m
+[0;32mI (1041189) sensorTask.c: API call would run[0m
+[0;32mI (1046189) sensorTask.c: API call would run[0m
+[0;32mI (1051189) sensorTask.c: API call would run[0m
+[0;32mI (1056189) sensorTask.c: API call would run[0m
+[0;32mI (1061189) sensorTask.c: API call would run[0m
+[0;32mI (1066189) sensorTask.c: API call would run[0m
+[0;32mI (1071189) sensorTask.c: API call would run[0m
+[0;32mI (1076189) sensorTask.c: API call would run[0m
+[0;32mI (1081189) sensorTask.c: API call would run[0m
+[0;32mI (1086189) sensorTask.c: API call would run[0m
+[0;32mI (1091189) sensorTask.c: API call would run[0m
+[0;32mI (1096189) sensorTask.c: API call would run[0m
+[0;32mI (1101189) sensorTask.c: API call would run[0m
+[0;32mI (1106189) sensorTask.c: API call would run[0m
+[0;32mI (1111189) sensorTask.c: API call would run[0m
+[0;32mI (1116189) sensorTask.c: API call would run[0m
+[0;32mI (1121189) sensorTask.c: API call would run[0m
+[0;32mI (1126189) sensorTask.c: API call would run[0m
+[0;32mI (1131189) sensorTask.c: API call would run[0m
+[0;32mI (1136189) sensorTask.c: API call would run[0m
+[0;32mI (1141189) sensorTask.c: API call would run[0m
+[0;32mI (1146189) sensorTask.c: API call would run[0m
+[0;32mI (1151189) sensorTask.c: API call would run[0m
+[0;32mI (1156189) sensorTask.c: API call would run[0m
+[0;32mI (1161189) sensorTask.c: API call would run[0m
+[0;32mI (1166189) sensorTask.c: API call would run[0m
+[0;32mI (1171189) sensorTask.c: API call would run[0m
+[0;32mI (1176189) sensorTask.c: API call would run[0m
+[0;32mI (1181189) sensorTask.c: API call would run[0m
+[0;32mI (1186189) sensorTask.c: API call would run[0m
+[0;32mI (1191189) sensorTask.c: API call would run[0m
+[0;32mI (1196189) sensorTask.c: API call would run[0m
+[0;32mI (1201189) sensorTask.c: API call would run[0m
+[0;32mI (1206189) sensorTask.c: API call would run[0m
+[0;32mI (1211189) sensorTask.c: API call would run[0m
+[0;32mI (1216189) sensorTask.c: API call would run[0m
+[0;32mI (1221189) sensorTask.c: API call would run[0m
+[0;32mI (1226189) sensorTask.c: API call would run[0m
+[0;32mI (1231189) sensorTask.c: API call would run[0m
+[0;32mI (1236189) sensorTask.c: API call would run[0m
+[0;32mI (1241189) sensorTask.c: API call would run[0m
+[0;32mI (1246189) sensorTask.c: API call would run[0m
+[0;32mI (1251189) sensorTask.c: API call would run[0m
+[0;32mI (1256189) sensorTask.c: API call would run[0m
+[0;32mI (1261189) sensorTask.c: API call would run[0m
+[0;32mI (1266189) sensorTask.c: API call would run[0m
+[0;32mI (1271189) sensorTask.c: API call would run[0m
+[0;32mI (1276189) sensorTask.c: API call would run[0m
+[0;32mI (1281189) sensorTask.c: API call would run[0m
+[0;32mI (1286189) sensorTask.c: API call would run[0m
+[0;32mI (1291189) sensorTask.c: API call would run[0m
+[0;32mI (1296189) sensorTask.c: API call would run[0m
+[0;32mI (1301189) sensorTask.c: API call would run[0m
+[0;32mI (1306189) sensorTask.c: API call would run[0m
+[0;32mI (1311189) sensorTask.c: API call would run[0m
+[0;32mI (1316189) sensorTask.c: API call would run[0m
+[0;32mI (1321189) sensorTask.c: API call would run[0m
+[0;32mI (1326189) sensorTask.c: API call would run[0m
+[0;32mI (1331189) sensorTask.c: API call would run[0m
+[0;32mI (1336189) sensorTask.c: API call would run[0m
+[0;32mI (1341189) sensorTask.c: API call would run[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x1758
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc00
+load:0x403cc700,len:0x2e04
+entry 0x403c9908
+[0;32mI (27) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Dec 29 2023 15:02:31[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.1[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=28104h (164100) map[0m
+[0;32mI (129) esp_image: segment 1: paddr=0003812c vaddr=3fc9a300 size=04d70h ( 19824) load[0m
+[0;32mI (134) esp_image: segment 2: paddr=0003cea4 vaddr=40374000 size=03174h ( 12660) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=b3dbch (736700) map[0m
+[0;32mI (276) esp_image: segment 4: paddr=000f3de4 vaddr=40377174 size=1315ch ( 78172) load[0m
+[0;32mI (303) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (303) boot: Disabling RNG early entropy source...[0m
+[0;32mI (314) cpu_start: Multicore app[0m
+[0;32mI (314) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (315) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (318) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (323) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (328) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (334) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (339) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (345) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (350) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (356) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (362) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (368) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (373) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (377) esp_psram: Speed: 80MHz[0m
+[0;32mI (462) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (482) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (482) cpu_start: Pro cpu up.[0m
+[0;32mI (483) cpu_start: Starting app cpu, entry point is 0x40375790[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (887) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (896) cpu_start: Pro cpu start user code[0m
+[0;32mI (896) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (896) cpu_start: Application information:[0m
+[0;32mI (899) cpu_start: Project name:     shopify_display[0m
+[0;32mI (904) cpu_start: App version:      56578fe-dirty[0m
+[0;32mI (910) cpu_start: Compile time:     Dec 29 2023 15:02:17[0m
+[0;32mI (916) cpu_start: ELF file SHA256:  eccc2d4017f17066...[0m
+[0;32mI (922) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (927) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (932) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (937) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (941) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (949) heap_init: At 3FCA32B0 len 00046460 (281 KiB): DRAM[0m
+[0;32mI (955) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (962) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (968) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (974) esp_psram: Adding pool of 7232K of PSRAM memory to heap allocator[0m
+[0;32mI (982) spi_flash: detected chip: generic[0m
+[0;32mI (986) spi_flash: flash io: dio[0m
+[0;32mI (990) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (997) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1004) app_start: Starting scheduler on CPU0[0m
+[0;32mI (1009) app_start: Starting scheduler on CPU1[0m
+[0;32mI (1009) main_task: Started on CPU0[0m
+[0;32mI (1019) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1029) main_task: Calling app_main()[0m
+[0;32mI (1039) main_task: Returned from app_main()[0m
+[0;32mI (1039) sensorTask.c: Enable request timer[0m
+[0;32mI (1039) GUI: Turn off LCD backlight[0m
+[0;32mI (1049) gpio: GPIO[45]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1059) GUI: Install RGB LCD panel driver[0m
+[0;32mI (1079) GUI: Register event callbacks[0m
+[0;32mI (1079) GUI: Initialize RGB LCD panel[0m
+[0;32mI (1079) GUI: Turn on LCD backlight[0m
+[0;32mI (1079) GUI: Initialize LVGL library[0m
+[0;32mI (1089) GUI: Allocate separate LVGL draw buffers from PSRAM[0m
+[0;32mI (1099) GUI: Register display driver to LVGL[0m
+[0;32mI (1099) GUI: Install LVGL tick timer[0m
+[0;32mI (1099) GUI: Initiate I2C[0m
+[0;32mI (1109) GUI: Initialize I2C[0m
+[0;32mI (1109) GUI: Initialize touch IO (I2C)[0m
+[0;32mI (1119) GUI: Initialize touch controller GT911[0m
+[0;32mI (1119) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (1129) GT911: TouchPad_Config_Version:130[0m
+[0;32mI (1129) GUI: Connect GT911 Touch to LVGL Touch[0m
+[0;32mI (1189) ui_events.c: Starting API Request Timer[0m
+[0;32mI (1189) pp: pp rom version: e7ae62f[0m
+[0;32mI (1189) net80211: net80211 rom version: e7ae62f[0m
+I (1199) wifi:wifi driver task: 3fcbf5f0, prio:23, stack:6656, core=0
+I (1199) wifi:wifi firmware version: 91b9630
+I (1209) wifi:wifi certification version: v7.0
+I (1209) wifi:config NVS flash: enabled
+I (1209) wifi:config nano formating: disabled
+I (1219) wifi:Init data frame dynamic rx buffer num: 32
+I (1219) wifi:Init static rx mgmt buffer num: 5
+I (1229) wifi:Init management short buffer num: 32
+I (1229) wifi:Init static tx buffer num: 16
+I (1229) wifi:Init tx cache buffer num: 32
+I (1239) wifi:Init static tx FG buffer num: 2
+I (1239) wifi:Init static rx buffer size: 1600
+I (1249) wifi:Init static rx buffer num: 10
+I (1249) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1249) wifi_init: rx ba win: 6[0m
+[0;32mI (1259) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1259) wifi_init: udp mbox: 6[0m
+[0;32mI (1269) wifi_init: tcp mbox: 6[0m
+[0;32mI (1269) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1269) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1279) wifi_init: tcp mss: 1440[0m
+[0;32mI (1279) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1289) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1289) phy_init: phy_version 620,ec7ec30,Sep  5 2023,13:49:13[0m
+I (1329) wifi:mode : sta (f4:12:fa:ce:63:a0)
+I (1329) wifi:enable tsf
+[0;32mI (1329) General: TOTAL: 383835[0m
+[0;32mI (1329) General: FREE: 149671[0m
+[0;32mI (1329) General: Wifi Connect[0m
+[0;32mI (1329) General: LARGEST BLOCK: 62464[0m
+[0;32mI (1339) General: wifi_init_sta finished.[0m
+I (1339) wifi:flush txq
+I (1339) wifi:stop sw txq
+I (1349) wifi:lmac stop hw txq
+I (1349) wifi:mode : sta (f4:12:fa:ce:63:a0)
+I (1349) wifi:enable tsf
+[0;32mI (1359) General: Wifi Connect[0m
+[0;32mI (3759) General: retry to connect to the AP[0m
+[0;32mI (3759) General: connect to the AP fail[0m
+[0;32mI (6169) General: retry to connect to the AP[0m
+[0;32mI (6169) General: connect to the AP fail[0m
+[0;32mI (6189) sensorTask.c: API call would run[0m
+[0;32mI (8569) General: retry to connect to the AP[0m
+[0;32mI (8569) General: connect to the AP fail[0m
+[0;32mI (10979) General: retry to connect to the AP[0m
+[0;32mI (10979) General: connect to the AP fail[0m
+[0;32mI (11189) sensorTask.c: API call would run[0m
+[0;32mI (13389) General: retry to connect to the AP[0m
+[0;32mI (13389) General: connect to the AP fail[0m
+[0;32mI (15789) General: Failed to connect to SSID:SSID, password:PASS[0m
+[0;32mI (15789) General: connect to the AP fail[0m
+[0;32mI (16189) sensorTask.c: API call would run[0m
+[0;32mI (21189) sensorTask.c: API call would run[0m
+[0;32mI (26189) sensorTask.c: API call would run[0m
+[0;32mI (31189) sensorTask.c: API call would run[0m
+[0;32mI (36189) sensorTask.c: API call would run[0m
+[0;32mI (41189) sensorTask.c: API call would run[0m
+[0;32mI (46189) sensorTask.c: API call would run[0m
+[0;32mI (51189) sensorTask.c: API call would run[0m
+[0;32mI (56189) sensorTask.c: API call would run[0m
+[0;32mI (61189) sensorTask.c: API call would run[0m
+[0;32mI (66189) sensorTask.c: API call would run[0m
+[0;32mI (71189) sensorTask.c: API call would run[0m
+[0;32mI (76189) sensorTask.c: API call would run[0m
+[0;32mI (81189) sensorTask.c: API call would run[0m
+[0;32mI (86189) sensorTask.c: API call would run[0m
+[0;32mI (91189) sensorTask.c: API call would run[0m
+[0;32mI (96189) sensorTask.c: API call would run[0m
+[0;32mI (101189) sensorTask.c: API call would run[0m
+[0;32mI (106189) sensorTask.c: API call would run[0m
+[0;32mI (111189) sensorTask.c: API call would run[0m
+[0;32mI (116189) sensorTask.c: API call would run[0m
+[0;32mI (121189) sensorTask.c: API call would run[0m
+[0;32mI (126189) sensorTask.c: API call would run[0m
+[0;32mI (131189) sensorTask.c: API call would run[0m
+[0;32mI (136189) sensorTask.c: API call would run[0m
+[0;32mI (141189) sensorTask.c: API call would run[0m
+[0;32mI (146189) sensorTask.c: API call would run[0m
+[0;32mI (151189) sensorTask.c: API call would run[0m
+[0;32mI (156189) sensorTask.c: API call would run[0m
+[0;32mI (161189) sensorTask.c: API call would run[0m
+[0;32mI (166189) sensorTask.c: API call would run[0m
+[0;32mI (171189) sensorTask.c: API call would run[0m
+[0;32mI (176189) sensorTask.c: API call would run[0m
+[0;32mI (181189) sensorTask.c: API call would run[0m
+[0;32mI (186189) sensorTask.c: API call would run[0m
+[0;32mI (191189) sensorTask.c: API call would run[0m
+[0;32mI (196189) sensorTask.c: API call would run[0m
+[0;32mI (201189) sensorTask.c: API call would run[0m
+[0;32mI (206189) sensorTask.c: API call would run[0m
+[0;32mI (211189) sensorTask.c: API call would run[0m
+[0;32mI (216189) sensorTask.c: API call would run[0m
+[0;32mI (221189) sensorTask.c: API call would run[0m
+[0;32mI (226189) sensorTask.c: API call would run[0m
+[0;32mI (231189) sensorTask.c: API call would run[0m
+[0;32mI (236189) sensorTask.c: API call would run[0m
+[0;32mI (241189) sensorTask.c: API call would run[0m
+[0;32mI (246189) sensorTask.c: API call would run[0m
+[0;32mI (251189) sensorTask.c: API call would run[0m
+[0;32mI (256189) sensorTask.c: API call would run[0m
+[0;32mI (261189) sensorTask.c: API call would run[0m
+[0;32mI (266189) sensorTask.c: API call would run[0m
+[0;32mI (271189) sensorTask.c: API call would run[0m
+[0;32mI (276189) sensorTask.c: API call would run[0m
+[0;32mI (281189) sensorTask.c: API call would run[0m
+[0;32mI (286189) sensorTask.c: API call would run[0m
+[0;32mI (291189) sensorTask.c: API call would run[0m
+[0;32mI (296189) sensorTask.c: API call would run[0m
+[0;32mI (301189) sensorTask.c: API call would run[0m
+[0;32mI (306189) sensorTask.c: API call would run[0m
+[0;32mI (311189) sensorTask.c: API call would run[0m
+[0;32mI (316189) sensorTask.c: API call would run[0m
+[0;32mI (321189) sensorTask.c: API call would run[0m
+[0;32mI (326189) sensorTask.c: API call would run[0m
+[0;32mI (331189) sensorTask.c: API call would run[0m
+[0;32mI (336189) sensorTask.c: API call would run[0m
+[0;32mI (341189) sensorTask.c: API call would run[0m
+[0;32mI (346189) sensorTask.c: API call would run[0m
+[0;32mI (351189) sensorTask.c: API call would run[0m
+[0;32mI (356189) sensorTask.c: API call would run[0m
+[0;32mI (361189) sensorTask.c: API call would run[0m
+[0;32mI (366189) sensorTask.c: API call would run[0m
+[0;32mI (371189) sensorTask.c: API call would run[0m
+[0;32mI (376189) sensorTask.c: API call would run[0m
+[0;32mI (381189) sensorTask.c: API call would run[0m
+[0;32mI (386189) sensorTask.c: API call would run[0m

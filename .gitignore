@@ -1,0 +1,6 @@
+*.zip
+build/
+managed_components/
+.DS_Store
+GUI Project/cache/
+sdkonfig

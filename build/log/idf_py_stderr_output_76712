@@ -1,0 +1,723 @@
+[0;33m--- esp-idf-monitor 1.3.3 on /dev/cu.usbserial-1410 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb3: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb3: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb3: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb1: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb3: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb1: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb3: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb1: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb3: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb3: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb1: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb3: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb3: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb1: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb3: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb3: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb3: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb3: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb3: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb3: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb3: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb3: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb3: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb3: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb1: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb3: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb1: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb1: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb3: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb1: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb1: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb1: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb3: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb1: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb3: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0;33m0x403757ac: call_start_cpu1 at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40375d4a: panic_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037ef3d: esp_system_abort at /Users/volkerritzka/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40386626: abort at /Users/volkerritzka/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4037ef33: _esp_error_check_failed at /Users/volkerritzka/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4200a617: guiTask at /Users/volkerritzka/esp/shopify-disp/main/gui.c:194 (discriminator 1)
+[0m
+[0;33m0x40381959: vPortTaskWrapper at /Users/volkerritzka/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42008fb3: uart_tx_char at /Users/volkerritzka/esp/esp-idf/components/vfs/vfs_uart.c:165
+[0m
+[0m
