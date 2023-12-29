@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "The Display"
+client_id = "3a6140b1c0f2e9ff71553fd240681e7e"
+application_url = "https://doll-links-controlling-rabbit.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_orders,read_products"
+
+[auth]
+redirect_urls = [
+  "https://doll-links-controlling-rabbit.trycloudflare.com/auth/callback",
+  "https://doll-links-controlling-rabbit.trycloudflare.com/auth/shopify/callback",
+  "https://doll-links-controlling-rabbit.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "stats-display.myshopify.com"
