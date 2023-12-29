@@ -1,8 +1,8 @@
-# Shopify App Template - Remix
+# Shopify App - Remix for the physical Shopify Display
 
-This is a template for building a [Shopify app](https://shopify.dev/docs/apps/getting-started) using the [Remix](https://remix.run) framework.
+This [Shopify app](https://shopify.dev/docs/apps/getting-started) is built using the [Remix](https://remix.run) framework.
 
-Rather than cloning this repo, you can use your preferred package manager and the Shopify CLI with [these steps](https://shopify.dev/docs/apps/getting-started/create).
+Use the Shopify CLI with [these steps](https://shopify.dev/docs/apps/getting-started/create).
 
 Visit the [`shopify.dev` documentation](https://shopify.dev/docs/api/shopify-app-remix) for more details on the Remix app package.
 
