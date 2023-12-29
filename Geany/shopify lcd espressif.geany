@@ -27,7 +27,7 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=9
+current_page=11
 FILE_NAME_0=541;C;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2Fmain.c;0;4
 FILE_NAME_1=461;C++;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2Fmain.h;0;4
 FILE_NAME_2=1634;C;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2Fapi_request_task.c;0;4
@@ -38,6 +38,7 @@ FILE_NAME_6=524;C++;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%
 FILE_NAME_7=320;C;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2Fui%2Fui_events.c;0;4
 FILE_NAME_8=1910;C;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2Fgui.c;0;4
 FILE_NAME_9=0;None;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2F.gitignore;0;4
+FILE_NAME_10=0;Markdown;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2FREADME.md;0;4
 
 [VTE]
 last_dir=/Users/volkerritzka
