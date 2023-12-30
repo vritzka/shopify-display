@@ -284,7 +284,7 @@ static void wifi_event_handler(void* arg, esp_event_base_t event_base, int32_t e
 	
     if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_START) {
 		ESP_LOGI(TAG, "Wifi Connect");
-        esp_wifi_connect();
+        ESP_ERROR_CHECK_WITHOUT_ABORT(esp_wifi_connect());
     } else if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_DISCONNECTED) {
         if (s_retry_num < EXAMPLE_ESP_MAXIMUM_RETRY) {
             esp_wifi_connect();
@@ -391,12 +391,14 @@ void wifi_connect(void)
      * happened. */
     if (bits & WIFI_CONNECTED_BIT) {
         ESP_LOGI(TAG, "connected to ap SSID:%s password:%s", "SSID", "PASS");
-
+		my_app.wifi_connected = 1;
         //vStartOtaTask();
     } else if (bits & WIFI_FAIL_BIT) {
         ESP_LOGI(TAG, "Failed to connect to SSID:%s, password:%s", "SSID", "PASS");
+        my_app.wifi_connected = 0;
     } else {
         ESP_LOGE(TAG, "UNEXPECTED EVENT");
+        my_app.wifi_connected = 0;
     }
 }
 

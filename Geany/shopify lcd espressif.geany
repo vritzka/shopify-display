@@ -27,19 +27,15 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=12
-FILE_NAME_0=541;C;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2Fmain.c;0;4
-FILE_NAME_1=461;C++;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2Fmain.h;0;4
-FILE_NAME_2=1634;C;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2Fapi_request_task.c;0;4
-FILE_NAME_3=231;C++;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2Fapi_request_task.h;0;4
-FILE_NAME_4=360;C;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fesp-idf%2Fexamples%2Fprotocols%2Fhttps_mbedtls%2Fmain%2Fhttps_mbedtls_example_main.c;0;4
-FILE_NAME_5=10886;C;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2Fgeneral.c;0;4
-FILE_NAME_6=524;C++;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2Fgeneral.h;0;4
-FILE_NAME_7=320;C;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2Fui%2Fui_events.c;0;4
-FILE_NAME_8=1910;C;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2Fgui.c;0;4
-FILE_NAME_9=0;None;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2F.gitignore;0;4
-FILE_NAME_10=0;Markdown;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2FREADME.md;0;4
-FILE_NAME_11=183;Markdown;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fstore-lcd-1%2FREADME.md;0;4
+current_page=7
+FILE_NAME_0=1883;C;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2FotaTask.c;0;4
+FILE_NAME_1=335;C++;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2FotaTask.h;0;4
+FILE_NAME_2=107;C;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2Fui%2Fui_events.c;0;4
+FILE_NAME_3=161;CMake;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2FCMakeLists.txt;0;4
+FILE_NAME_4=807;None;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2FKconfig.projbuild;0;4
+FILE_NAME_5=5;None;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fversion.txt;0;4
+FILE_NAME_6=212;None;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fpartitions.csv;0;4
+FILE_NAME_7=9774;C;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2Fgeneral.c;0;4
 
 [VTE]
 last_dir=/Users/volkerritzka

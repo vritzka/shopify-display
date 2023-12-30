@@ -32,9 +32,14 @@ lv_obj_t *ui_WifiPassword;
 void ui_event_WifiScanButton( lv_event_t * e);
 lv_obj_t *ui_WifiScanButton;
 lv_obj_t *ui_Label3;
-lv_obj_t *ui_Label4;
 lv_obj_t *ui_WifiStatusLabel;
 lv_obj_t *ui_Container3;
+lv_obj_t *ui_Label4;
+void ui_event_FirmwareUpgradeButton( lv_event_t * e);
+lv_obj_t *ui_FirmwareUpgradeButton;
+lv_obj_t *ui_Label6;
+lv_obj_t *ui_UpgradeStatusBar;
+lv_obj_t *ui_CurrentVersionLabel;
 
 
 // SCREEN: ui_Screen3
@@ -82,6 +87,12 @@ void ui_event_WifiScanButton( lv_event_t * e) {
     lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
 if ( event_code == LV_EVENT_CLICKED) {
       wifi_scan_button_cb( e );
+}
+}
+void ui_event_FirmwareUpgradeButton( lv_event_t * e) {
+    lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
+if ( event_code == LV_EVENT_CLICKED) {
+      software_upgrade_button( e );
 }
 }
 void ui_event_Button1( lv_event_t * e) {

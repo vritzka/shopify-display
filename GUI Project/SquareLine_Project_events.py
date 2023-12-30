@@ -14,3 +14,7 @@ def save_slider(event_struct):
 def WifiKeyboardReady(event_struct):
     return
 
+
+def software_upgrade_button(event_struct):
+    return
+

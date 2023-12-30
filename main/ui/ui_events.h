@@ -13,6 +13,7 @@ extern "C" {
 void init_app(lv_event_t * e);
 void WifiKeyboardReady(lv_event_t * e);
 void wifi_scan_button_cb(lv_event_t * e);
+void software_upgrade_button(lv_event_t * e);
 void save_slider(lv_event_t * e);
 
 #ifdef __cplusplus

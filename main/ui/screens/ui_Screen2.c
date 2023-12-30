@@ -12,11 +12,10 @@ lv_obj_clear_flag( ui_Screen2, LV_OBJ_FLAG_SCROLLABLE );    /// Flags
 
 ui_Container1 = lv_obj_create(ui_Screen2);
 lv_obj_remove_style_all(ui_Container1);
-lv_obj_set_width( ui_Container1, 600);
+lv_obj_set_width( ui_Container1, 540);
 lv_obj_set_height( ui_Container1, 460);
-lv_obj_set_x( ui_Container1, 95 );
-lv_obj_set_y( ui_Container1, 0 );
-lv_obj_set_align( ui_Container1, LV_ALIGN_CENTER );
+lv_obj_set_align( ui_Container1, LV_ALIGN_RIGHT_MID );
+lv_obj_add_flag( ui_Container1, LV_OBJ_FLAG_HIDDEN );   /// Flags
 lv_obj_clear_flag( ui_Container1, LV_OBJ_FLAG_SCROLLABLE );    /// Flags
 
 ui_Slider1 = lv_slider_create(ui_Container1);
@@ -58,6 +57,7 @@ lv_obj_set_x( ui_WifiPassword, 126 );
 lv_obj_set_y( ui_WifiPassword, -100 );
 lv_obj_set_align( ui_WifiPassword, LV_ALIGN_CENTER );
 lv_textarea_set_text(ui_WifiPassword,"fjxzwrmw6xd2");
+lv_textarea_set_placeholder_text(ui_WifiPassword,"Password");
 lv_textarea_set_one_line(ui_WifiPassword,true);
 
 
@@ -74,16 +74,10 @@ lv_obj_clear_flag( ui_WifiScanButton, LV_OBJ_FLAG_SCROLLABLE );    /// Flags
 ui_Label3 = lv_label_create(ui_Container2);
 lv_obj_set_width( ui_Label3, LV_SIZE_CONTENT);  /// 1
 lv_obj_set_height( ui_Label3, LV_SIZE_CONTENT);   /// 1
-lv_obj_set_x( ui_Label3, -241 );
-lv_obj_set_y( ui_Label3, -143 );
-lv_obj_set_align( ui_Label3, LV_ALIGN_CENTER );
-
-ui_Label4 = lv_label_create(ui_Container2);
-lv_obj_set_width( ui_Label4, LV_SIZE_CONTENT);  /// 1
-lv_obj_set_height( ui_Label4, LV_SIZE_CONTENT);   /// 1
-lv_obj_set_x( ui_Label4, 74 );
-lv_obj_set_y( ui_Label4, -141 );
-lv_obj_set_align( ui_Label4, LV_ALIGN_CENTER );
+lv_obj_set_x( ui_Label3, 0 );
+lv_obj_set_y( ui_Label3, 25 );
+lv_label_set_text(ui_Label3,"Wifi");
+lv_obj_set_style_text_font(ui_Label3, &lv_font_montserrat_30, LV_PART_MAIN| LV_STATE_DEFAULT);
 
 ui_WifiStatusLabel = lv_label_create(ui_Container2);
 lv_obj_set_width( ui_WifiStatusLabel, LV_SIZE_CONTENT);  /// 1
@@ -95,17 +89,56 @@ lv_label_set_text(ui_WifiStatusLabel,"");
 
 ui_Container3 = lv_obj_create(ui_Screen2);
 lv_obj_remove_style_all(ui_Container3);
-lv_obj_set_width( ui_Container3, 600);
-lv_obj_set_height( ui_Container3, 460);
-lv_obj_set_x( ui_Container3, 95 );
-lv_obj_set_y( ui_Container3, 0 );
-lv_obj_set_align( ui_Container3, LV_ALIGN_CENTER );
-lv_obj_add_flag( ui_Container3, LV_OBJ_FLAG_HIDDEN );   /// Flags
+lv_obj_set_width( ui_Container3, 540);
+lv_obj_set_height( ui_Container3, 480);
+lv_obj_set_align( ui_Container3, LV_ALIGN_RIGHT_MID );
 lv_obj_clear_flag( ui_Container3, LV_OBJ_FLAG_SCROLLABLE );    /// Flags
+
+ui_Label4 = lv_label_create(ui_Container3);
+lv_obj_set_width( ui_Label4, LV_SIZE_CONTENT);  /// 1
+lv_obj_set_height( ui_Label4, LV_SIZE_CONTENT);   /// 1
+lv_obj_set_x( ui_Label4, 0 );
+lv_obj_set_y( ui_Label4, 25 );
+lv_label_set_text(ui_Label4,"Software Update");
+lv_obj_set_style_text_font(ui_Label4, &lv_font_montserrat_30, LV_PART_MAIN| LV_STATE_DEFAULT);
+
+ui_FirmwareUpgradeButton = lv_btn_create(ui_Container3);
+lv_obj_set_width( ui_FirmwareUpgradeButton, 250);
+lv_obj_set_height( ui_FirmwareUpgradeButton, 50);
+lv_obj_set_x( ui_FirmwareUpgradeButton, 25 );
+lv_obj_set_y( ui_FirmwareUpgradeButton, 0 );
+lv_obj_set_align( ui_FirmwareUpgradeButton, LV_ALIGN_LEFT_MID );
+lv_obj_add_flag( ui_FirmwareUpgradeButton, LV_OBJ_FLAG_SCROLL_ON_FOCUS );   /// Flags
+lv_obj_clear_flag( ui_FirmwareUpgradeButton, LV_OBJ_FLAG_SCROLLABLE );    /// Flags
+
+ui_Label6 = lv_label_create(ui_FirmwareUpgradeButton);
+lv_obj_set_width( ui_Label6, LV_SIZE_CONTENT);  /// 1
+lv_obj_set_height( ui_Label6, LV_SIZE_CONTENT);   /// 1
+lv_obj_set_align( ui_Label6, LV_ALIGN_CENTER );
+lv_label_set_text(ui_Label6,"Check & Install Updates");
+
+ui_UpgradeStatusBar = lv_bar_create(ui_Container3);
+lv_obj_set_width( ui_UpgradeStatusBar, 250);
+lv_obj_set_height( ui_UpgradeStatusBar, 25);
+lv_obj_set_x( ui_UpgradeStatusBar, 25 );
+lv_obj_set_y( ui_UpgradeStatusBar, 71 );
+lv_obj_set_align( ui_UpgradeStatusBar, LV_ALIGN_LEFT_MID );
+lv_obj_set_style_radius(ui_UpgradeStatusBar, 0, LV_PART_MAIN| LV_STATE_DEFAULT);
+
+lv_obj_set_style_radius(ui_UpgradeStatusBar, 0, LV_PART_INDICATOR| LV_STATE_DEFAULT);
+
+ui_CurrentVersionLabel = lv_label_create(ui_Container3);
+lv_obj_set_width( ui_CurrentVersionLabel, LV_SIZE_CONTENT);  /// 1
+lv_obj_set_height( ui_CurrentVersionLabel, LV_SIZE_CONTENT);   /// 1
+lv_obj_set_x( ui_CurrentVersionLabel, -107 );
+lv_obj_set_y( ui_CurrentVersionLabel, -118 );
+lv_obj_set_align( ui_CurrentVersionLabel, LV_ALIGN_CENTER );
+lv_label_set_text(ui_CurrentVersionLabel,"-");
 
 lv_keyboard_set_textarea(ui_WifiKeyboard,ui_WifiPassword);
 lv_obj_add_event_cb(ui_WifiKeyboard, ui_event_WifiKeyboard, LV_EVENT_ALL, NULL);
 lv_obj_add_event_cb(ui_WifiScanButton, ui_event_WifiScanButton, LV_EVENT_ALL, NULL);
+lv_obj_add_event_cb(ui_FirmwareUpgradeButton, ui_event_FirmwareUpgradeButton, LV_EVENT_ALL, NULL);
 lv_obj_add_event_cb(ui_Screen2, ui_event_Screen2, LV_EVENT_ALL, NULL);
 
 }

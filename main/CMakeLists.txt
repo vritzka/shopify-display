@@ -4,6 +4,7 @@ idf_component_register(SRCS "main.c"
 "gui.c"
 "general.c"
 "api_request_task.c"
+"otaTask.c"
 ${SRC_UI}
                     
 INCLUDE_DIRS "." "ui")

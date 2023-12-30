@@ -35,9 +35,14 @@ extern lv_obj_t *ui_WifiPassword;
 void ui_event_WifiScanButton( lv_event_t * e);
 extern lv_obj_t *ui_WifiScanButton;
 extern lv_obj_t *ui_Label3;
-extern lv_obj_t *ui_Label4;
 extern lv_obj_t *ui_WifiStatusLabel;
 extern lv_obj_t *ui_Container3;
+extern lv_obj_t *ui_Label4;
+void ui_event_FirmwareUpgradeButton( lv_event_t * e);
+extern lv_obj_t *ui_FirmwareUpgradeButton;
+extern lv_obj_t *ui_Label6;
+extern lv_obj_t *ui_UpgradeStatusBar;
+extern lv_obj_t *ui_CurrentVersionLabel;
 // SCREEN: ui_Screen3
 void ui_Screen3_screen_init(void);
 extern lv_obj_t *ui_Screen3;

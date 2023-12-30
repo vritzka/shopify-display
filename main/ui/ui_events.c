@@ -2,7 +2,7 @@
 #include "general.h"
 #include "api_request_task.h"
 #include "esp_log.h"
-
+#include "otaTask.h"
 
 static const char *TAG = "ui_events.c";
 
@@ -32,4 +32,9 @@ void WifiKeyboardReady(lv_event_t * e)
 {
 	//if(!my_app.wifi_on)
 		wifi_connect();
+}
+
+void software_upgrade_button(lv_event_t * e)
+{
+	vStartOtaTask();
 }

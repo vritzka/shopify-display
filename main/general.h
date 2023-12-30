@@ -24,7 +24,7 @@
 
 typedef struct {
 	bool wifi_on;   
-    
+    bool wifi_connected;
 } global_data_t;
 
 extern global_data_t my_app;
