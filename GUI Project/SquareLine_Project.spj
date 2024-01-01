@@ -7134,7 +7134,7 @@
     "theme_color2": 0,
     "uiExportFolderPath": "/Users/volkerritzka/esp/shopify-disp/main/ui",
     "projectExportFolderPath": "/Users/volkerritzka/esp/shopify-disp/main/ui",
-    "backup_cnt": 6,
+    "backup_cnt": 7,
     "autosave_cnt": 0,
     "lvgl_version": "8.3.6",
     "callfuncsexport": "C_FILE",
