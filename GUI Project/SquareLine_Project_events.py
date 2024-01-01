@@ -18,3 +18,11 @@ def WifiKeyboardReady(event_struct):
 def software_upgrade_button(event_struct):
     return
 
+
+def screen_brightness_slider(event_struct):
+    return
+
+
+def save_settings_screen(event_struct):
+    return
+

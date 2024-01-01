@@ -124,14 +124,6 @@ void guiTask(void *pvParameter) {
   assert(sem_gui_ready);
 #endif
 
-#if PIN_NUM_BK_LIGHT >= 0
-  ESP_LOGI(TAG, "Turn off LCD backlight");
-  gpio_config_t bk_gpio_config = {.mode = GPIO_MODE_OUTPUT,
-                                  .pin_bit_mask = 1ULL
-                                                  << PIN_NUM_BK_LIGHT};
-  ESP_ERROR_CHECK(gpio_config(&bk_gpio_config));
-#endif
-
   ESP_LOGI(TAG, "Install RGB LCD panel driver");
   esp_lcd_rgb_panel_config_t panel_config = {
     .data_width = 16, // RGB565 in parallel mode, thus 16bit in width
@@ -194,11 +186,6 @@ void guiTask(void *pvParameter) {
   ESP_ERROR_CHECK(esp_lcd_panel_reset(panel_handle));
   ESP_ERROR_CHECK(esp_lcd_panel_init(panel_handle));
 
-#if PIN_NUM_BK_LIGHT >= 0
-  ESP_LOGI(TAG, "Turn on LCD backlight");
-  gpio_set_level(PIN_NUM_BK_LIGHT, LCD_BK_LIGHT_ON_LEVEL);
-#endif
-
   ESP_LOGI(TAG, "Initialize LVGL library");
   lv_init();
   void *buf1 = NULL;
@@ -208,15 +195,14 @@ void guiTask(void *pvParameter) {
   ESP_ERROR_CHECK(
       esp_lcd_rgb_panel_get_frame_buffer(panel_handle, 2, &buf1, &buf2));
   // initialize LVGL draw buffers
-  lv_disp_draw_buf_init(&disp_buf, buf1, buf2,
-                        LCD_H_RES * LCD_V_RES);
+  lv_disp_draw_buf_init(&disp_buf, buf1, buf2, LCD_H_RES * LCD_V_RES);
 #else
   ESP_LOGI(TAG, "Allocate separate LVGL draw buffers from PSRAM");
-  buf1 = heap_caps_malloc(LCD_H_RES * 100 * sizeof(lv_color_t),
-                          MALLOC_CAP_SPIRAM);
+  buf1 =
+      heap_caps_malloc(LCD_H_RES * 100 * sizeof(lv_color_t), MALLOC_CAP_SPIRAM);
   assert(buf1);
-  buf2 = heap_caps_malloc(LCD_H_RES * 100 * sizeof(lv_color_t),
-                          MALLOC_CAP_SPIRAM);
+  buf2 =
+      heap_caps_malloc(LCD_H_RES * 100 * sizeof(lv_color_t), MALLOC_CAP_SPIRAM);
   assert(buf2);
   // initialize LVGL draw buffers
   lv_disp_draw_buf_init(&disp_buf, buf1, buf2, LCD_H_RES * 100);

@@ -18,19 +18,30 @@
 #include "nvs.h"
 #include "nvs_flash.h"
 #include "ui.h"
+#include "driver/ledc.h"
+
 
 typedef struct {
   bool wifi_on;
   bool wifi_connected;
-  uint8_t screen_brightness_slider_value
+  uint8_t screen_brightness_slider_value;
+  uint16_t screen_brightness_duty;
 } global_data_t;
 
 extern global_data_t my_app;
+
+#define LEDC_MODE               LEDC_LOW_SPEED_MODE
+#define LEDC_BACKLIGHT_TIMER              LEDC_TIMER_0
+#define LEDC_BACKLIGHT_OUTPUT_IO          (45) // Define the output GPIO for Backlight
+#define LEDC_BACKLIGHT_CHANNEL            LEDC_CHANNEL_0
+#define LEDC_BACKLIGHT_DUTY_RES           LEDC_TIMER_7_BIT // Set duty resolution to 13 bits
+#define LEDC_BACKLIGHT_FREQUENCY          (500) // Frequency in Hertz. 
 
 void wifi_init(void);
 void wifi_scan(void);
 void wifi_connect(void);
 void wifi_off(void);
+void init_ledc(void);
 
 void create_settings_menu(void);
 

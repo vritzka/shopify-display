@@ -48,12 +48,12 @@ void create_settings_menu(void) {
   lv_obj_t *section;
 
   /*Create sub pages*/
-  lv_obj_t *sub_gps_page = lv_menu_page_create(menu, NULL);
+  lv_obj_t *sub_display_page = lv_menu_page_create(menu, NULL);
   lv_obj_set_style_pad_hor(
-      sub_gps_page, lv_obj_get_style_pad_left(lv_menu_get_main_header(menu), 0),
-      0);
-  lv_menu_separator_create(sub_gps_page);
-  section = lv_menu_section_create(sub_gps_page);
+      sub_display_page,
+      lv_obj_get_style_pad_left(lv_menu_get_main_header(menu), 0), 0);
+  lv_menu_separator_create(sub_display_page);
+  section = lv_menu_section_create(sub_display_page);
   lv_obj_set_parent(ui_Container1, section);
 
   lv_obj_t *sub_software_page = lv_menu_page_create(menu, NULL);
@@ -63,14 +63,14 @@ void create_settings_menu(void) {
   lv_menu_separator_create(sub_software_page);
   section = lv_menu_section_create(sub_software_page);
   lv_obj_set_parent(ui_Container2, section);
-
-  lv_obj_t *sub_display_page = lv_menu_page_create(menu, NULL);
+  
+   lv_obj_t *sub_gps_page = lv_menu_page_create(menu, NULL);
   lv_obj_set_style_pad_hor(
-      sub_display_page,
-      lv_obj_get_style_pad_left(lv_menu_get_main_header(menu), 0), 0);
-  lv_menu_separator_create(sub_display_page);
-  section = lv_menu_section_create(sub_display_page);
-  lv_obj_set_parent(ui_Container3, section);
+      sub_gps_page, lv_obj_get_style_pad_left(lv_menu_get_main_header(menu), 0),
+      0);
+  lv_menu_separator_create(sub_gps_page);
+  section = lv_menu_section_create(sub_gps_page);
+  lv_obj_set_parent(ui_Container3, section); 
 
   /*Create a root page*/
   root_page = lv_menu_page_create(menu, "Settings");
@@ -128,8 +128,7 @@ static void back_event_handler(lv_event_t *e) {
   lv_obj_t *menu = lv_event_get_user_data(e);
 
   if (lv_menu_back_btn_is_root(menu, obj)) {
-    //_ui_screen_change( &ui_Home_Screen, LV_SCR_LOAD_ANIM_NONE, 0, 0,
-    //&ui_Home_Screen_screen_init);
+	_ui_screen_change( &ui_Screen1, LV_SCR_LOAD_ANIM_NONE, 0, 0, &ui_Screen1_screen_init);
   }
 }
 
@@ -138,7 +137,7 @@ static void back_event_handler(lv_event_t *e) {
 ////////////////////////////////////////////////////////////
 
 #define DEFAULT_SCAN_LIST_SIZE 8
-/*
+
 static void print_auth_mode(int authmode)
 {
     switch (authmode) {
@@ -246,7 +245,7 @@ switch (group_cipher) {
         break;
     }
 }
-*/
+
 uint16_t number = DEFAULT_SCAN_LIST_SIZE;
 wifi_ap_record_t ap_info[DEFAULT_SCAN_LIST_SIZE];
 uint16_t ap_count = 0;
@@ -268,11 +267,9 @@ static void wifi_event_handler(void *arg, esp_event_base_t event_base,
     ESP_ERROR_CHECK(esp_wifi_scan_get_ap_num(&ap_count));
 
     for (int i = 0; (i < DEFAULT_SCAN_LIST_SIZE) && (i < ap_count); i++) {
-      // ESP_LOGI(TAG, "SSID \t\t%s", ap_info[i].ssid);
-      // ESP_LOGI(TAG, "RSSI \t\t%d", ap_info[i].rssi);
       sprintf(somestring, "%s", ap_info[i].ssid);
       lv_dropdown_add_option(ui_WifiDropdown, somestring, i);
-      // print_auth_mode(ap_info[i].authmode);
+      print_auth_mode(ap_info[i].authmode);
       if (ap_info[i].authmode != WIFI_AUTH_WEP) {
         // print_cipher_type(ap_info[i].pairwise_cipher,
         // ap_info[i].group_cipher);
@@ -409,6 +406,34 @@ void wifi_off(void) {
   ESP_ERROR_CHECK(esp_event_handler_instance_unregister(
       IP_EVENT, IP_EVENT_STA_GOT_IP, &wifi_event_handler));
 }
+
+
+
+void init_ledc(void)
+{
+  // Prepare and then apply the LEDC PWM BACKLIGHT timer configuration
+    ledc_timer_config_t ledc_timer = {
+        .speed_mode       = LEDC_MODE,
+        .timer_num        = LEDC_BACKLIGHT_TIMER,
+        .duty_resolution  = LEDC_BACKLIGHT_DUTY_RES,
+        .freq_hz          = LEDC_BACKLIGHT_FREQUENCY,  // Set output frequency
+        .clk_cfg          = LEDC_AUTO_CLK
+    };
+    ESP_ERROR_CHECK(ledc_timer_config(&ledc_timer));
+
+    // Prepare and then apply the LEDC PWM channel configuration
+    ledc_channel_config_t ledc_channel = {
+        .speed_mode     = LEDC_MODE,
+        .channel        = LEDC_BACKLIGHT_CHANNEL,
+        .timer_sel      = LEDC_BACKLIGHT_TIMER,
+        .intr_type      = LEDC_INTR_DISABLE,
+        .gpio_num       = LEDC_BACKLIGHT_OUTPUT_IO,
+        .duty           = 0, // Set duty to 0%
+        .hpoint         = 0
+    };
+    ESP_ERROR_CHECK(ledc_channel_config(&ledc_channel)); 
+     
+ }
 
 ////////////////////////////////////////////////////////////
 /////////////////////// HELPERS ////////////////////////////

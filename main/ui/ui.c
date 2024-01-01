@@ -23,7 +23,9 @@ void ui_Screen2_screen_init(void);
 void ui_event_Screen2( lv_event_t * e);
 lv_obj_t *ui_Screen2;
 lv_obj_t *ui_Container1;
-lv_obj_t *ui_Slider1;
+void ui_event_ScreenBrightnessSlider( lv_event_t * e);
+lv_obj_t *ui_ScreenBrightnessSlider;
+lv_obj_t *ui_Label7;
 lv_obj_t *ui_Container2;
 void ui_event_WifiKeyboard( lv_event_t * e);
 lv_obj_t *ui_WifiKeyboard;
@@ -31,7 +33,6 @@ lv_obj_t *ui_WifiDropdown;
 lv_obj_t *ui_WifiPassword;
 void ui_event_WifiScanButton( lv_event_t * e);
 lv_obj_t *ui_WifiScanButton;
-lv_obj_t *ui_Label3;
 lv_obj_t *ui_WifiStatusLabel;
 lv_obj_t *ui_Container3;
 lv_obj_t *ui_Label4;
@@ -40,15 +41,6 @@ lv_obj_t *ui_FirmwareUpgradeButton;
 lv_obj_t *ui_Label6;
 lv_obj_t *ui_UpgradeStatusBar;
 lv_obj_t *ui_CurrentVersionLabel;
-
-
-// SCREEN: ui_Screen3
-void ui_Screen3_screen_init(void);
-lv_obj_t *ui_Screen3;
-lv_obj_t *ui_Bar1;
-void ui_event_Button1( lv_event_t * e);
-lv_obj_t *ui_Button1;
-lv_obj_t *ui_Label5;
 void ui_event____initial_actions0( lv_event_t * e);
 lv_obj_t *ui____initial_actions0;
 
@@ -76,6 +68,15 @@ if ( event_code == LV_EVENT_GESTURE &&  lv_indev_get_gesture_dir(lv_indev_get_ac
 lv_indev_wait_release(lv_indev_get_act());
       _ui_screen_change( &ui_Screen1, LV_SCR_LOAD_ANIM_NONE, 0, 0, &ui_Screen1_screen_init);
 }
+if ( event_code == LV_EVENT_SCREEN_UNLOAD_START) {
+      save_settings_screen( e );
+}
+}
+void ui_event_ScreenBrightnessSlider( lv_event_t * e) {
+    lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
+if ( event_code == LV_EVENT_VALUE_CHANGED) {
+      screen_brightness_slider( e );
+}
 }
 void ui_event_WifiKeyboard( lv_event_t * e) {
     lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
@@ -95,12 +96,6 @@ if ( event_code == LV_EVENT_CLICKED) {
       software_upgrade_button( e );
 }
 }
-void ui_event_Button1( lv_event_t * e) {
-    lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
-if ( event_code == LV_EVENT_CLICKED) {
-      save_slider( e );
-}
-}
 void ui_event____initial_actions0( lv_event_t * e) {
     lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
 if ( event_code == LV_EVENT_SCREEN_LOAD_START) {
@@ -117,7 +112,6 @@ lv_theme_t *theme = lv_theme_default_init(dispp, lv_palette_main(LV_PALETTE_BLUE
 lv_disp_set_theme(dispp, theme);
 ui_Screen1_screen_init();
 ui_Screen2_screen_init();
-ui_Screen3_screen_init();
 ui____initial_actions0 = lv_obj_create(NULL);
 lv_obj_add_event_cb(ui____initial_actions0, ui_event____initial_actions0, LV_EVENT_ALL, NULL);
 
