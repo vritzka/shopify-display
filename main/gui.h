@@ -32,7 +32,7 @@
 #include "esp_system.h"
 
 
-
+extern esp_lcd_panel_handle_t panel_handle;
 extern TaskHandle_t xGuiTaskHandle;
 void guiTask(void *pvParameter);
 void vStartGuiTask(void);

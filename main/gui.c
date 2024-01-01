@@ -2,6 +2,7 @@
 
 static const char *TAG = "GUI";
 TaskHandle_t xGuiTaskHandle = NULL;
+esp_lcd_panel_handle_t panel_handle = NULL;
 
 /*********************
  *      DEFINES
@@ -138,7 +139,6 @@ void guiTask(void *pvParameter) {
 
 
     ESP_LOGI(TAG, "Install RGB LCD panel driver");
-    esp_lcd_panel_handle_t panel_handle = NULL;
     esp_lcd_rgb_panel_config_t panel_config = {
         .data_width = 16, // RGB565 in parallel mode, thus 16bit in width
         .psram_trans_align = 64,
@@ -311,13 +311,6 @@ ESP_LOGI(TAG, "Initiate I2C");
 
   indev_drv.read_cb = touch_read;
 
-
-    
-    
-    
-    
-    
-    
     ui_init();
 
     while (1) {

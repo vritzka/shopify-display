@@ -27,15 +27,17 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=7
-FILE_NAME_0=1883;C;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2FotaTask.c;0;4
-FILE_NAME_1=335;C++;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2FotaTask.h;0;4
-FILE_NAME_2=107;C;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2Fui%2Fui_events.c;0;4
-FILE_NAME_3=161;CMake;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2FCMakeLists.txt;0;4
-FILE_NAME_4=807;None;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2FKconfig.projbuild;0;4
-FILE_NAME_5=5;None;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fversion.txt;0;4
-FILE_NAME_6=212;None;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fpartitions.csv;0;4
-FILE_NAME_7=9774;C;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2Fgeneral.c;0;4
+current_page=0
+FILE_NAME_0=2047;C;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2FotaTask.c;0;4
+FILE_NAME_1=377;C++;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2FotaTask.h;0;4
+FILE_NAME_2=129;C;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2Fgui.c;0;4
+FILE_NAME_3=720;C++;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2Fgui.h;0;4
+FILE_NAME_4=107;C;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2Fui%2Fui_events.c;0;4
+FILE_NAME_5=161;CMake;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2FCMakeLists.txt;0;4
+FILE_NAME_6=807;None;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2FKconfig.projbuild;0;4
+FILE_NAME_7=3;None;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fversion.txt;0;4
+FILE_NAME_8=212;None;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fpartitions.csv;0;4
+FILE_NAME_9=9774;C;0;EUTF-8;1;1;0;%2FUsers%2Fvolkerritzka%2Fesp%2Fshopify-disp%2Fmain%2Fgeneral.c;0;4
 
 [VTE]
 last_dir=/Users/volkerritzka
