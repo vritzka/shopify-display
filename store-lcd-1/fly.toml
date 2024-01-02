@@ -24,6 +24,5 @@ primary_region = "ams"
 [env]
   PORT = "8081"
   SHOPIFY_APP_URL = "https://store-lcd-1.fly.dev"
-  SHOPIFY_API_KEY = "3a6140b1c0f2e9ff71553fd240681e7e"
   SCOPES = "read_orders, read_products"
 

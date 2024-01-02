@@ -284,7 +284,13 @@ static void wifi_event_handler(void *arg, esp_event_base_t event_base,
 
   if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_START) {
     ESP_LOGI(TAG, "Wifi Connect");
-    ESP_ERROR_CHECK_WITHOUT_ABORT(esp_wifi_connect());
+    err = esp_wifi_connect();
+    if (err != ESP_OK) {
+		ESP_LOGI(TAG, "Wifi couldn't connect");
+		wifi_scan();
+	}
+    
+    
   } else if (event_base == WIFI_EVENT &&
              event_id == WIFI_EVENT_STA_DISCONNECTED) {
     if (s_retry_num < EXAMPLE_ESP_MAXIMUM_RETRY) {

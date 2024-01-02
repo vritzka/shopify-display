@@ -15,7 +15,6 @@ lv_obj_remove_style_all(ui_Container1);
 lv_obj_set_width( ui_Container1, 540);
 lv_obj_set_height( ui_Container1, 460);
 lv_obj_set_align( ui_Container1, LV_ALIGN_RIGHT_MID );
-lv_obj_add_flag( ui_Container1, LV_OBJ_FLAG_HIDDEN );   /// Flags
 lv_obj_clear_flag( ui_Container1, LV_OBJ_FLAG_SCROLLABLE | LV_OBJ_FLAG_SCROLL_ELASTIC | LV_OBJ_FLAG_SCROLL_MOMENTUM | LV_OBJ_FLAG_SCROLL_CHAIN );    /// Flags
 
 ui_ScreenBrightnessSlider = lv_slider_create(ui_Container1);
@@ -93,7 +92,6 @@ lv_obj_remove_style_all(ui_Container3);
 lv_obj_set_width( ui_Container3, 540);
 lv_obj_set_height( ui_Container3, 480);
 lv_obj_set_align( ui_Container3, LV_ALIGN_RIGHT_MID );
-lv_obj_add_flag( ui_Container3, LV_OBJ_FLAG_HIDDEN );   /// Flags
 lv_obj_clear_flag( ui_Container3, LV_OBJ_FLAG_SCROLLABLE | LV_OBJ_FLAG_SCROLL_ELASTIC | LV_OBJ_FLAG_SCROLL_MOMENTUM | LV_OBJ_FLAG_SCROLL_CHAIN );    /// Flags
 
 ui_Label4 = lv_label_create(ui_Container3);
